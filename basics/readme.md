@@ -288,3 +288,4 @@ print(tensor)
 # dense_shape=tf.Tensor([3 3], shape=(2,), dtype=int64))
 ```
 ### These are some more ways to create tensors in TensorFlow that can be useful in various situations.
+[link for notebook which have some more things about tensors](https://github.com/sandeep4055/Tensorflow/blob/main/basics/tensors.ipynb)

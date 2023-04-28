@@ -1,4 +1,5 @@
 ## There are many ways to create tensors in TensorFlow. Here are some of the most common methods:
+[link for notebook which have some detailed explanation of tensors in tensorflow](https://github.com/sandeep4055/Tensorflow/blob/main/basics/tensors.ipynb)
 
 1. Using **tf.constant:** This function creates a tensor with constant values.
 
@@ -288,4 +289,4 @@ print(tensor)
 # dense_shape=tf.Tensor([3 3], shape=(2,), dtype=int64))
 ```
 ### These are some more ways to create tensors in TensorFlow that can be useful in various situations.
-[link for notebook which have some more things about tensors](https://github.com/sandeep4055/Tensorflow/blob/main/basics/tensors.ipynb)
+

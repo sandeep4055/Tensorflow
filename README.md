@@ -12,4 +12,4 @@
 
 <p>In the field of Machine Learning, tensors are used as representations for many applications, such as images or videos. In this way, a lot of information, some of it multidimensional, can be represented in one object. An image, for example, consists of a large number of individual pixels whose color value in turn is composed of the superposition of three color layers (at least in the case of RGB images). This complex construction can be represented compactly with a tensor.</p>
 
-
+#### [How to create tensors? click me...](https://github.com/sandeep4055/Tensorflow/tree/main/basics#readme)

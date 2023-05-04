@@ -49,14 +49,14 @@ if __name__ == "__main__":
         tf.keras.layers.Input(shape=(img_height, img_width, 3)),
         rescale,
         augmentation,
-        tf.keras.layers.Conv2D(filters=16, kernel_size=(3, 3), activation="relu" , padding="SAME"),
+        tf.keras.layers.Conv2D(filters=16, kernel_size=(3, 3), activation="relu", padding="SAME"),
         tf.keras.layers.MaxPool2D(pool_size=(3, 3)),
         tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3), activation="relu", padding="SAME"),
         tf.keras.layers.MaxPool2D(pool_size=(3, 3)),
         tf.keras.layers.Conv2D(filters=64, kernel_size=(3, 3), activation="relu", padding="SAME"),
         tf.keras.layers.GlobalMaxPool2D(),
         tf.keras.layers.Flatten(),
-        tf.keras.layers.Dense(units=128,activation="relu"),
+        tf.keras.layers.Dense(units=128, activation="relu"),
         tf.keras.layers.Dense(units=5, activation="softmax")
     ])
 

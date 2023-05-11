@@ -24,4 +24,4 @@
 | 6 |  callbacks |  https://github.com/sandeep4055/Tensorflow/tree/main/callbacks |
 | 7 |  Classification |  https://github.com/sandeep4055/Tensorflow/tree/main/classification |
 | 8 |  Functional Api |  https://github.com/sandeep4055/Tensorflow/tree/main/functional_api |
-| 9 |  Data Api |  | 8 |  Functional Api |  https://github.com/sandeep4055/Tensorflow/tree/main/functional_api |
+| 9 |  Data Api |  | 8 |  Functional Api |  https://github.com/sandeep4055/Tensorflow/tree/main/data_api |

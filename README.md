@@ -13,3 +13,15 @@
 <p>In the field of Machine Learning, tensors are used as representations for many applications, such as images or videos. In this way, a lot of information, some of it multidimensional, can be represented in one object. An image, for example, consists of a large number of individual pixels whose color value in turn is composed of the superposition of three color layers (at least in the case of RGB images). This complex construction can be represented compactly with a tensor.</p>
 
 #### [How to create tensors? click me...](https://github.com/sandeep4055/Tensorflow/tree/main/basics#readme)
+
+| Number | Topic | link | 
+| ----- |  ----- |  ----- |
+| 1 |  Tensors |  https://github.com/sandeep4055/Tensorflow/tree/main/basics |
+| 2 |  Model |  https://github.com/sandeep4055/Tensorflow/tree/main/model |
+| 3 |  custom model |  https://github.com/sandeep4055/Tensorflow/tree/main/custom_model |
+| 4 |  custom losses |  https://github.com/sandeep4055/Tensorflow/tree/main/custom_losses |
+| 5 |  custom layers |  https://github.com/sandeep4055/Tensorflow/tree/main/custom_layer |
+| 6 |  callbacks |  https://github.com/sandeep4055/Tensorflow/tree/main/callbacks |
+| 7 |  Classification |  https://github.com/sandeep4055/Tensorflow/tree/main/classification |
+| 8 |  Functional Api |  https://github.com/sandeep4055/Tensorflow/tree/main/functional_api |
+| 9 |  Data Api |  | 8 |  Functional Api |  https://github.com/sandeep4055/Tensorflow/tree/main/functional_api |

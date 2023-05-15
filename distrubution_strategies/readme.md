@@ -1,14 +1,12 @@
 # Distribution Strategies
 
-A brief introduction or overview of the file.
-
 ## Table of Contents
 
-- [ What is Distribution Strategies?](#what-is-distribution-strategies-section-1)
+- [ What is Distribution Strategies?](#what-is-distribution-strategies)
 - [Synchronous training vs Asynchronous training](#synchronous-training-vs-asynchronous-training)
-- [Section 3](#section-3)
+- [Distribution Strategies Types](#here-are-some-distribution-strategies-available-in-tensorflow)
 
-## What is Distribution Strategies? {#section-1}
+## What is Distribution Strategies?
 In TensorFlow, distribution strategies are used to train models across multiple devices or machines, enabling parallelism and scalability. They allow you to take advantage of multiple GPUs or multiple machines to accelerate training and improve performance. 
 
 ##### To make sure that we are all on the same page let's define some basic notations:
@@ -19,7 +17,7 @@ In TensorFlow, distribution strategies are used to train models across multiple 
 
 - **All-reduce:** a distributed algorithm that aggregates all the trainable parameters from different workers or accelerators. I’m not gonna go into details on how it works but essentially, it receives the weights from all workers and performs some sort of aggregation on them to compute the final weights.
 
-# Synchronous training vs Asynchronous training
+## Synchronous training vs Asynchronous training
 
 Synchronous training and asynchronous training are two different approaches to distributed training in machine learning. Here's an overview of each:
 

@@ -73,7 +73,7 @@ In summary, tf.keras is the recommended high-level API for TensorFlow. It offers
 
 | Number | Topic | link | 
 | ----- |  ----- |  ----- |
-| 1 |  Tensors |  https://github.com/sandeep4055/Tensorflow/tree/main/history_tensorflow |
+| 1 |  History and overview of TensorFlow |  https://github.com/sandeep4055/Tensorflow/tree/main/history_tensorflow |
 | 2 |  Tensors |  https://github.com/sandeep4055/Tensorflow/tree/main/basics |
 | 3 |  Model |  https://github.com/sandeep4055/Tensorflow/tree/main/model |
 | 4 |  custom model |  https://github.com/sandeep4055/Tensorflow/tree/main/custom_model |

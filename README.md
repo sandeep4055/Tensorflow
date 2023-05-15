@@ -25,3 +25,5 @@
 | 7 |  Classification |  https://github.com/sandeep4055/Tensorflow/tree/main/classification |
 | 8 |  Functional Api |  https://github.com/sandeep4055/Tensorflow/tree/main/functional_api |
 | 9 |  Data Api  |  https://github.com/sandeep4055/Tensorflow/tree/main/data_api |
+| 10 |  Gradient Tape  |  https://github.com/sandeep4055/Tensorflow/tree/main/gardient_tape |
+

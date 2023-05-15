@@ -73,16 +73,16 @@ In summary, tf.keras is the recommended high-level API for TensorFlow. It offers
 
 | Number | Topic | link | 
 | ----- |  ----- |  ----- |
-| 1 |  Tensors |  https://github.com/sandeep4055/Tensorflow/tree/main/basics |
-| 2 |  Model |  https://github.com/sandeep4055/Tensorflow/tree/main/model |
-| 3 |  custom model |  https://github.com/sandeep4055/Tensorflow/tree/main/custom_model |
-| 4 |  custom losses |  https://github.com/sandeep4055/Tensorflow/tree/main/custom_losses |
-| 5 |  custom layers |  https://github.com/sandeep4055/Tensorflow/tree/main/custom_layer |
-| 6 |  callbacks |  https://github.com/sandeep4055/Tensorflow/tree/main/callbacks |
-| 7 |  Classification |  https://github.com/sandeep4055/Tensorflow/tree/main/classification |
-| 8 |  Functional Api |  https://github.com/sandeep4055/Tensorflow/tree/main/functional_api |
-| 9 |  Data Api  |  https://github.com/sandeep4055/Tensorflow/tree/main/data_api |
-| 10 |  Gradient Tape  |  https://github.com/sandeep4055/Tensorflow/tree/main/gradient_tape |
-
+| 1 |  Tensors |  https://github.com/sandeep4055/Tensorflow/tree/main/history_tensorflow |
+| 2 |  Tensors |  https://github.com/sandeep4055/Tensorflow/tree/main/basics |
+| 3 |  Model |  https://github.com/sandeep4055/Tensorflow/tree/main/model |
+| 4 |  custom model |  https://github.com/sandeep4055/Tensorflow/tree/main/custom_model |
+| 5 |  custom losses |  https://github.com/sandeep4055/Tensorflow/tree/main/custom_losses |
+| 6 |  custom layers |  https://github.com/sandeep4055/Tensorflow/tree/main/custom_layer |
+| 7 |  callbacks |  https://github.com/sandeep4055/Tensorflow/tree/main/callbacks |
+| 8 |  Classification |  https://github.com/sandeep4055/Tensorflow/tree/main/classification |
+| 9 |  Functional Api |  https://github.com/sandeep4055/Tensorflow/tree/main/functional_api |
+| 10 |  Data Api  |  https://github.com/sandeep4055/Tensorflow/tree/main/data_api |
+| 11 |  Gradient Tape  |  https://github.com/sandeep4055/Tensorflow/tree/main/gradient_tape |
 
 

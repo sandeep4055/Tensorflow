@@ -5,6 +5,8 @@
 - [ What is Distribution Strategies?](#what-is-distribution-strategies)
 - [Synchronous training vs Asynchronous training](#synchronous-training-vs-asynchronous-training)
 - [Distribution Strategies Types](#here-are-some-distribution-strategies-available-in-tensorflow)
+- [tf.distrubute](#tfdistribute)
+- [Functions available in tf.distribute](#what-are-functions-available-in-tfdistrubute)
 
 ## What is Distribution Strategies?
 In TensorFlow, distribution strategies are used to train models across multiple devices or machines, enabling parallelism and scalability. They allow you to take advantage of multiple GPUs or multiple machines to accelerate training and improve performance. 

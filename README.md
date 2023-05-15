@@ -69,6 +69,28 @@ In summary, tf.keras is the recommended high-level API for TensorFlow. It offers
 - Overall, the integration of Keras into TensorFlow expanded the TensorFlow ecosystem, making it more user-friendly and accessible to a wider range of developers, from beginners to experts. It provided a unified and consistent interface for building and training deep learning models within the TensorFlow framework.
 
 
+# Eager mode execution vs Graph mode execution:
+Eager mode and graph mode execution are two different ways of executing operations in TensorFlow. Here's an overview of each:
+
+#### Eager mode execution:
+
+- Eager execution is the default mode in TensorFlow 2.x. It enables immediate execution of operations just like regular Python code.
+- With eager mode, TensorFlow operations are evaluated and executed eagerly, as soon as they are called. This allows for more interactive and dynamic model development.
+- Eager mode supports debugging, printing intermediate values, and using Python control flow statements like loops and conditionals directly in the TensorFlow code.
+- Eager mode provides a natural and intuitive way to work with TensorFlow, especially for beginners and researchers.
+
+#### Graph mode execution:
+
+- Graph mode execution was the default mode in TensorFlow 1.x and is still widely used.
+- In graph mode, TensorFlow operations are first defined in a computational graph, and then the graph is executed within a TensorFlow session.
+- The computational graph represents the series of operations to be executed and their dependencies. This allows for optimization and parallelization of computations.
+- Graph mode offers advantages in terms of performance and scalability, especially for large-scale models and distributed training.
+- Graph mode also enables the use of TensorFlow's static shape inference and graph optimizations.
+
+Both eager mode and graph mode have their own advantages and use cases. Eager mode is more user-friendly and suitable for interactive development and prototyping, while graph mode offers better performance and scalability for production-level training and deployment. TensorFlow 2.x primarily focuses on eager mode execution, but it still supports graph mode for backward compatibility and advanced use cases.
+
+
+
 #
 
 | Number | Topic | link | 

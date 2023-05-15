@@ -40,6 +40,9 @@ Low-level APIs are typically used when you need fine-grained control over the mo
 
 Both high-level and low-level APIs have their own advantages and use cases. High-level APIs are generally easier to use and provide faster development and prototyping, while low-level APIs offer more flexibility and customization options. The choice between them depends on the specific requirements and complexity of your machine learning project.
 
+![tensorflow_structure_eng](https://github.com/sandeep4055/Tensorflow/assets/70133134/78286357-4f91-4429-abca-93de3b1aee21)
+
+
 # keras vs tf.keras
 
 Keras and tf.keras are both high-level APIs for building and training deep learning models in TensorFlow. However, there are some differences between the two:

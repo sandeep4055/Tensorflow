@@ -40,7 +40,22 @@ Low-level APIs are typically used when you need fine-grained control over the mo
 
 Both high-level and low-level APIs have their own advantages and use cases. High-level APIs are generally easier to use and provide faster development and prototyping, while low-level APIs offer more flexibility and customization options. The choice between them depends on the specific requirements and complexity of your machine learning project.
 
+# keras vs tf.keras
 
+Keras and tf.keras are both high-level APIs for building and training deep learning models in TensorFlow. However, there are some differences between the two:
+
+1. **Development and Maintenance:** Keras was originally an independent open-source project developed by François Chollet. In 2017, Keras was integrated into TensorFlow as its official high-level API, called tf.keras. tf.keras is now the recommended API for TensorFlow and is actively maintained by the TensorFlow team. The standalone Keras library is still available and maintained, but it may not have the latest updates and improvements from the TensorFlow ecosystem.
+
+2. **Integration with TensorFlow:** tf.keras is tightly integrated with the TensorFlow ecosystem. It seamlessly works with other TensorFlow components, such as tf.data for data input pipelines, tf.distribute for distributed training, and tf.saved_model for model saving and deployment. It also supports TensorFlow-specific features, such as eager execution and TensorFlow 2.0's functions and operators.
+
+3. **Compatibility:** tf.keras strives to maintain compatibility with the Keras API, but there might be some differences and additions in the TensorFlow implementation. Some TensorFlow-specific features, such as custom TensorFlow ops or distributed training strategies, may not be available in the standalone Keras library.
+
+4. **Community and Support:** tf.keras benefits from the larger TensorFlow community, which provides extensive documentation, tutorials, and examples specific to TensorFlow. It also leverages TensorFlow's resources, such as TensorFlow Hub for pre-trained models and TensorFlow Addons for additional functionalities.
+
+In summary, tf.keras is the recommended high-level API for TensorFlow. It offers better integration with TensorFlow and takes advantage of TensorFlow-specific features and optimizations. If you are working with TensorFlow, it is recommended to use tf.keras for building and training your models. However, if you have an existing codebase or project built with the standalone Keras library, it can still be used and maintained separately.
+
+
+#
 
 | Number | Topic | link | 
 | ----- |  ----- |  ----- |

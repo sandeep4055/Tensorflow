@@ -54,6 +54,20 @@ Keras and tf.keras are both high-level APIs for building and training deep learn
 
 In summary, tf.keras is the recommended high-level API for TensorFlow. It offers better integration with TensorFlow and takes advantage of TensorFlow-specific features and optimizations. If you are working with TensorFlow, it is recommended to use tf.keras for building and training your models. However, if you have an existing codebase or project built with the standalone Keras library, it can still be used and maintained separately.
 
+# Before the integration of Keras into TensorFlow
+
+- Before the integration of Keras into TensorFlow, TensorFlow had its own low-level API for building and training deep learning models. This API provided more flexibility and control over the model architecture and training process but required more code and manual implementation of various components.
+
+- The pre-Keras TensorFlow API consisted of lower-level classes and functions for defining the model architecture, specifying the loss function, optimizing the model parameters, and executing the training loops. It required developers to explicitly define and manage TensorFlow variables, placeholders, sessions, and gradients.
+
+- While powerful and flexible, this low-level TensorFlow API had a steeper learning curve and required more boilerplate code to accomplish common deep learning tasks. It was not as user-friendly and intuitive as higher-level APIs like Keras.
+
+- To address these concerns, TensorFlow decided to integrate Keras into its ecosystem. Keras is a high-level deep learning API that provides a user-friendly and intuitive interface for building and training models. It simplifies many aspects of model development and abstracts away the low-level TensorFlow details, making it easier and more accessible to developers.
+
+- The integration of Keras into TensorFlow as tf.keras brought the best of both worlds. It retained the simplicity and ease of use of Keras while leveraging the power and ecosystem of TensorFlow. Developers could benefit from the high-level Keras API for most use cases while still having access to TensorFlow's lower-level features and optimizations when needed.
+
+- Overall, the integration of Keras into TensorFlow expanded the TensorFlow ecosystem, making it more user-friendly and accessible to a wider range of developers, from beginners to experts. It provided a unified and consistent interface for building and training deep learning models within the TensorFlow framework.
+
 
 #
 

@@ -15,7 +15,7 @@
     - [Accessing and downloading pretrained models and datasets in TensorFlow](#accessing-and-downloading-pretrained-models-and-datasets-in-tensorflow)
 
 - [3. Feature Extraction with Pretrained Models](#feature-extraction-with-pretrained-models)
-    -[Removing the last fully connected layers for feature extraction](#removing-the-last-fully-connected-layers-for-feature-extraction)
+    - [Removing the last fully connected layers for feature extraction](#removing-the-last-fully-connected-layers-for-feature-extraction)
     - [Extracting features from intermediate layers](#extracting-features-from-intermediate-layers)
 
 

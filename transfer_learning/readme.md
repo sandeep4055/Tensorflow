@@ -8,6 +8,8 @@
     - [Types of transfer learning: feature extraction and fine-tuning](#types-of-transfer-learning-feature-extraction-and-fine-tuning)
     - [Pretrained models and datasets](#pretrained-models-and-datasets)
 
+- [2. Pretrained Models and Datasets](#2-pretrained-models-and-datasets)
+
 
 ## Introduction to Transfer Learning
 
@@ -139,6 +141,50 @@ It's important to consider these benefits and challenges when deciding to employ
 These datasets serve as benchmarks for evaluating models and training models from scratch when sufficient data is available.
 
 Pretrained models and datasets play a crucial role in advancing machine learning research and application development. They provide a foundation for building powerful models and enable researchers and developers to leverage state-of-the-art techniques and focus on specific tasks or domains of interest.
+
+## 2. Pretrained Models and Datasets
+### Here's an introduction to some popular pretrained models used in computer vision:
+
+#### VGG (Visual Geometry Group):
+
+- VGG is a convolutional neural network architecture proposed by the Visual Geometry Group at the University of Oxford.
+- It consists of multiple convolutional layers with small 3x3 filters followed by max pooling layers.
+- VGG is known for its simplicity and its ability to learn rich representations of images.
+- Variants of VGG include VGG16 and VGG19, which have 16 and 19 layers, respectively.
+
+#### ResNet (Residual Network):
+
+- ResNet is a deep convolutional neural network architecture introduced by Microsoft Research.
+- It addresses the problem of vanishing gradients in very deep networks by using skip connections, also known as residual connections.
+- ResNet allows for the training of extremely deep networks (e.g., ResNet50, ResNet101, ResNet152) with improved accuracy.
+- ResNet models have been widely adopted and achieved state-of-the-art performance in various image classification tasks.
+
+#### Inception:
+
+- Inception, also known as GoogLeNet, is an architecture developed by researchers at Google.
+- It introduced the concept of the Inception module, which uses multiple parallel convolutional operations at different scales and concatenates their outputs.
+- Inception models are efficient and achieve high accuracy while reducing the number of parameters compared to other architectures.
+- Notable versions include InceptionV1, InceptionV2, and InceptionV3.
+
+#### MobileNet:
+
+- MobileNet is a family of lightweight convolutional neural network architectures designed for mobile and embedded devices.
+- MobileNet models use depthwise separable convolutions, which reduce the computational cost by separating spatial and channel-wise convolutions.
+- They strike a balance between model size and accuracy, making them suitable for resource-constrained environments.
+
+#### EfficientNet:
+
+- EfficientNet is a recent advancement in convolutional neural network architecture introduced by Google Research.
+- It uses a compound scaling method that uniformly scales the network's depth, width, and resolution to achieve optimal performance.
+- EfficientNet models have achieved state-of-the-art accuracy on various image classification tasks while maintaining efficiency.
+- These pretrained models have been trained on large-scale datasets like ImageNet and provide powerful representations of visual information. They can be used as a starting point for transfer learning, where the prelearned weights are fine-tuned on specific tasks or datasets, enabling faster convergence and better performance.
+
+
+
+
+
+
+
 
 
 

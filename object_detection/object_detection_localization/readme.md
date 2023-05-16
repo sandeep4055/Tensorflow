@@ -3,7 +3,7 @@
 ## Table of contents :
 
 - [1. Introduction to Object Detection](#introduction-to-object-detection)
-    -[Overview of object detection and its applications](#overview-of-object-detection-and-its-applications)
+    - [Overview of object detection and its applications](#overview-of-object-detection-and-its-applications)
 
 
 ## Introduction to Object Detection

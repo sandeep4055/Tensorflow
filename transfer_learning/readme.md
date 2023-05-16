@@ -17,6 +17,9 @@
 - [3. Feature Extraction with Pretrained Models](#feature-extraction-with-pretrained-models)
     - [Removing the last fully connected layers for feature extraction](#removing-the-last-fully-connected-layers-for-feature-extraction)
     - [Extracting features from intermediate layers](#extracting-features-from-intermediate-layers)
+    - [Implementing feature extraction using TensorFlow and pretrained models](#implementing-feature-extraction-using-tensorflow-and-pretrained-models)
+    - [Training a new classifier on the extracted features](#training-a-new-classifier-on-the-extracted-features)
+
 
 
 ## Introduction to Transfer Learning
@@ -380,44 +383,97 @@ In the above example, the input_data is passed through the feature_extractor mod
 
 By extracting features from intermediate layers, you can capture information at different levels of abstraction within the pretrained model. These features can be useful for tasks such as visualization, understanding the model's internal representations, or as inputs to downstream models or classifiers.
 
+### Implementing feature extraction using TensorFlow and pretrained models
+#
 
+#### To implement feature extraction using TensorFlow and pretrained models, follow these steps:
 
+1. Import the necessary libraries:
+```python
+import tensorflow as tf
+from tensorflow.keras.applications import VGG16
+```
 
+2.Load the pretrained model:
+```python
+base_model = VGG16(weights='imagenet', include_top=False)
+```
+In this example, we're using the VGG16 model with pretrained weights from the ImageNet dataset. Setting include_top=False excludes the fully connected layers at the top of the network.
 
+3. Freeze the base model:
+```python
+base_model.trainable = False
+```
+By setting trainable=False, we prevent the weights of the base model from being updated during training.
 
+4. Create a new model for feature extraction:
+```python
+feature_extractor = tf.keras.Model(inputs=base_model.input, outputs=base_model.output)
+```
+This new model takes the input from the base model and outputs the activations of the last convolutional layer. It effectively serves as a feature extractor.
 
+5. Prepare your data:
+Make sure your input data is in the appropriate format and size expected by the pretrained model. For example, for the VGG16 model, the input images should be of size (224, 224) and normalized to the range [0, 1].
 
+6. Extract features:
 
+```python
+features = feature_extractor.predict(input_data)
+```
+Pass your input data through the feature extractor model to obtain the extracted features. The features variable will contain the extracted features for each input sample.
 
+By using pretrained models for feature extraction, you can leverage their learned representations to extract meaningful features from your own data. These features can then be used as inputs to other models or for various downstream tasks such as classification or clustering.
 
+### Training a new classifier on the extracted features
+#
+Once we have extracted the features using a pretrained model, we can use these features to train a new classifier on top of them. The new classifier can be a simple linear classifier or a fully connected neural network.
 
+##### Here are the steps to train a new classifier on top of the extracted features:
 
+1. Load the extracted features and their corresponding labels into memory.
+2. Split the data into training and validation sets.
+3. Define a new classifier model. This model should take the extracted features as input and output the predicted class labels.
+4. Compile the new model with an appropriate loss function and optimizer.
+5. Train the new model using the extracted features as input and their corresponding labels as output.
+6. Evaluate the performance of the new model on the validation set.
 
+##### Here's some sample code that demonstrates how to train a simple linear classifier on top of extracted features using TensorFlow:
+```python
+import numpy as np
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
 
+# Load extracted features and their labels
+train_features = np.load('train_features.npy')
+train_labels = np.load('train_labels.npy')
+val_features = np.load('val_features.npy')
+val_labels = np.load('val_labels.npy')
 
+# Define new classifier model
+model = Sequential([
+    Dense(256, activation='relu', input_shape=train_features.shape[1:]),
+    Dropout(0.5),
+    Dense(10, activation='softmax')
+])
 
+# Compile model
+model.compile(loss='categorical_crossentropy',
+              optimizer='adam',
+              metrics=['accuracy'])
 
+# Train model
+model.fit(train_features, train_labels,
+          batch_size=32,
+          epochs=10,
+          validation_data=(val_features, val_labels))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Evaluate model on validation set
+score = model.evaluate(val_features, val_labels, verbose=0)
+print('Validation loss:', score[0])
+print('Validation accuracy:', score[1])
+```
+In this example, we first load the extracted features and their corresponding labels into memory. We then define a new classifier model using tf.keras.Sequential, which consists of a fully connected layer with 256 units and ReLU activation, a dropout layer with a rate of 0.5, and a final fully connected layer with 10 units and softmax activation. We compile the model with categorical cross-entropy loss and the Adam optimizer, and train it on the extracted features and their corresponding labels. Finally, we evaluate the performance of the model on the validation set and print the validation loss and accuracy.
 
 
 

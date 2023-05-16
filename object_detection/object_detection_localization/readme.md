@@ -6,6 +6,7 @@
     - [Overview of object detection and its applications](#overview-of-object-detection-and-its-applications)
     - [Challenges and evaluation metrics for object detection](#challenges-and-evaluation-metrics-for-object-detection)
     - [Single-stage vs. two-stage object detection](#single-stage-vs-two-stage-object-detection)
+    - [Popular object detection datasets](#popular-object-detection-datasets)
 
 
 ## Introduction to Object Detection
@@ -90,6 +91,32 @@ Examples of two-stage object detectors include Faster R-CNN (Region-based Convol
 The choice between single-stage and two-stage detectors depends on the specific requirements of the application. If real-time processing speed is crucial, single-stage detectors may be preferred. On the other hand, if accuracy and robustness are more important, particularly in scenarios with smaller or heavily occluded objects, two-stage detectors are often favored.
 
 <img src="https://github.com/sandeep4055/Tensorflow/assets/70133134/590c226d-824f-44cf-aeb5-9bb11217f206" height="500">
+
+
+### Popular object detection datasets:
+#
+There are several popular object detection datasets that are commonly used for training and evaluating object detection models. Here are some well-known datasets:
+
+- COCO (Common Objects in Context): COCO is one of the most widely used datasets for object detection. It consists of over 200,000 images across 80 object categories. The dataset provides detailed annotations, including bounding box annotations, segmentation masks, and keypoints.
+
+- Pascal VOC (Visual Object Classes): The Pascal VOC dataset is another popular benchmark dataset for object detection. It includes 20 object categories and provides annotations for object bounding boxes. The dataset is widely used for evaluating object detection performance and has been a standard benchmark for many years.
+
+- ImageNet: While ImageNet is primarily known for its image classification dataset, it also includes object detection annotations for a subset of the dataset. The object detection annotations cover 200 object categories and provide bounding box annotations for objects in the images.
+
+- KITTI: The KITTI dataset focuses on autonomous driving applications and provides object detection annotations for tasks such as pedestrian detection, car detection, and cyclist detection. It includes images collected from a driving platform and provides accurate 3D bounding box annotations.
+
+- Open Images: Open Images is a large-scale dataset that includes millions of images with annotations for multiple tasks, including object detection. It covers a wide range of object categories and provides bounding box annotations for object detection tasks.
+
+- Cityscapes: Cityscapes is a dataset specifically designed for urban scene understanding, including object detection. It provides high-resolution images of urban street scenes and annotations for object categories like cars, pedestrians, bicycles, and more.
+
+- MS COCO-Tasks: MS COCO-Tasks is an extension of the COCO dataset that includes annotations for additional tasks beyond object detection. It provides annotations for tasks such as instance segmentation, keypoint detection, and stuff segmentation.
+
+These datasets have played a significant role in advancing object detection research and are commonly used for training and evaluating state-of-the-art models. They vary in terms of scale, object categories, and annotation complexity, catering to different applications and research interests.
+
+
+
+
+
 
 
 

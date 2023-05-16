@@ -117,10 +117,11 @@ Both eager mode and graph mode have their own advantages and use cases. Eager mo
 | 7 |  callbacks |  https://github.com/sandeep4055/Tensorflow/tree/main/callbacks |
 | 8 |  Classification |  https://github.com/sandeep4055/Tensorflow/tree/main/classification |
 | 9 |  Functional Api |  https://github.com/sandeep4055/Tensorflow/tree/main/functional_api |
-| 10 |  Data Api  |  https://github.com/sandeep4055/Tensorflow/tree/main/data_api |
-| 11 |  Gradient Tape  |  https://github.com/sandeep4055/Tensorflow/tree/main/gradient_tape |
-| 12 |  Autograph  |  https://github.com/sandeep4055/Tensorflow/tree/main/autograph |
-| 13 |  Distribution Strategies  |  https://github.com/sandeep4055/Tensorflow/tree/main/distrubution_strategies |
+| 10 |  Transfer learning  |  https://github.com/sandeep4055/Tensorflow/tree/main/transfer_learning|
+| 11 |  Data Api  |  https://github.com/sandeep4055/Tensorflow/tree/main/data_api |
+| 12 |  Gradient Tape  |  https://github.com/sandeep4055/Tensorflow/tree/main/gradient_tape |
+| 13 |  Autograph  |  https://github.com/sandeep4055/Tensorflow/tree/main/autograph |
+| 14 |  Distribution Strategies  |  https://github.com/sandeep4055/Tensorflow/tree/main/distrubution_strategies |
 
 
 

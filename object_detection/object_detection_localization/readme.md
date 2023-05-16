@@ -124,6 +124,7 @@ These datasets have played a significant role in advancing object detection rese
 
 Combining semantic segmentation with object detection leads to instance segmentation, which first detects the object instances, and then segments each within the detected boxes (known in this case as regions of interest).
 
+<img src="https://github.com/sandeep4055/Tensorflow/assets/70133134/e56cb41f-e3c5-42c7-a475-64203952923b" height="500">
 
 
 

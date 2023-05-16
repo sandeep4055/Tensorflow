@@ -350,6 +350,7 @@ In the above example, the dataset is passed through the feature_extractor model 
 By removing the last fully connected layers, you can use the output of the modified model as a feature representation that captures meaningful information from your input data. These features can then be used for various downstream tasks, such as training a classifier or clustering the data.
 
 ### Extracting features from intermediate layers
+#
 
 To extract features from intermediate layers of a pretrained model in TensorFlow, you can modify the model by creating a new model that outputs the activations of the desired intermediate layers. This allows you to obtain feature representations from different levels of abstraction within the model.
 

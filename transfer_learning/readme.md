@@ -22,7 +22,8 @@
 
 - [4. Fine-tuning Pretrained Models](#fine-tuning-pretrained-models)
     - [Identifying and selecting layers for fine-tuning](#identifying-and-selecting-layers-for-fine-tuning)
-    - 
+    - [Freezing and unfreezing layers](#freezing-and-unfreezing-layers)
+    - [Implementing fine-tuning using TensorFlow and pretrained models](#implementing-fine-tuning-using-tensorflow-and-pretrained-models)
 
 
 
@@ -497,6 +498,101 @@ When performing fine-tuning, it's important to identify and select the layers th
 5. **Experiment and evaluate:** Selecting the layers for fine-tuning is not always straightforward and may require some experimentation. It's recommended to try different configurations and evaluate their performance on a validation set. You can monitor metrics like validation accuracy or loss to determine the optimal set of layers for fine-tuning.
 
 To implement the selection of layers for fine-tuning in TensorFlow, you can set the **trainable** attribute of each layer in the model accordingly. For example, you can set **trainable=False** for the initial layers that you want to freeze, and **trainable=True** for the layers that you want to fine-tune.
+
+### Freezing and unfreezing layers
+#
+In TensorFlow, freezing and unfreezing layers refers to controlling whether the weights of specific layers should be updated during training or not. Freezing a layer means fixing its weights and preventing them from being updated, while unfreezing a layer allows its weights to be trained and updated.
+
+To freeze or unfreeze layers in TensorFlow, you can set the trainable attribute of each layer accordingly. Here's how you can freeze and unfreeze layers in TensorFlow:
+
+1. Freezing Layers:
+To freeze a layer and prevent its weights from being updated during training, you can set the trainable attribute of the layer to False. 
+
+```python
+# Freeze a specific layer
+layer.trainable = False
+```
+You can iterate over the layers in your model and set the trainable attribute accordingly for each layer you want to freeze.
+
+2. Unfreezing Layers:
+To unfreeze a layer and allow its weights to be trained and updated during training, you can set the trainable attribute of the layer to True.
+
+```python
+# Unfreeze a specific layer
+layer.trainable = True
+```
+Similar to freezing layers, you can iterate over the layers in your model and set the trainable attribute accordingly for each layer you want to unfreeze.
+
+It's worth noting that freezing or unfreezing layers is typically done after the model is compiled. Once you have set the trainable attribute of the desired layers, you can compile the model and proceed with training.
+
+```python
+import tensorflow as tf
+
+# Create your model
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)),
+    tf.keras.layers.MaxPooling2D((2, 2)),
+    tf.keras.layers.Flatten(),
+    tf.keras.layers.Dense(10, activation='softmax')
+])
+
+# Freeze specific layers
+model.layers[0].trainable = False
+
+# Compile the model
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+# Train the model
+model.fit(train_data, train_labels, epochs=10)
+
+# Unfreeze a layer
+model.layers[0].trainable = True
+
+# Recompile the model after unfreezing
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+# Train the model again, now with the unfrozen layer
+model.fit(train_data, train_labels, epochs=10)
+```
+
+In the above example, the first layer (Conv2D layer) is frozen by setting trainable = False. After training the model with the frozen layer, the same layer is unfrozen by setting trainable = True. The model is then recompiled, and training continues with the unfrozen layer.
+
+### Implementing fine-tuning using TensorFlow and pretrained models
+
+Implementing fine-tuning using TensorFlow and pretrained models involves two main steps: loading the pretrained model and modifying it for fine-tuning, and then training the modified model with the target dataset. Here's a step-by-step guide:
+
+Step 1: Load the Pretrained Model
+Step 2: Modify the Pretrained Model for fine tuning
+Step 3: Train the Modified Model
+
+```python
+import tensorflow as tf
+from tensorflow.keras.applications import ResNet50
+
+# Step 1: Load the Pretrained Model
+pretrained_model = ResNet50(weights='imagenet', include_top=False)
+pretrained_model.trainable = False
+
+# Step 2: Modify the Pretrained Model for Fine-tuning
+inputs = tf.keras.Input(shape=(224, 224, 3))
+x = pretrained_model(inputs, training=False)
+x = tf.keras.layers.GlobalAveragePooling2D()(x)
+outputs = tf.keras.layers.Dense(num_classes, activation='softmax')(x)
+model = tf.keras.Model(inputs=inputs, outputs=outputs)
+
+# Step 3: Train the Modified Model
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+model.fit(train_dataset, validation_data=val_dataset, epochs=10, batch_size=32)
+
+# Optionally, save the trained model
+model.save('fine_tuned_model.h5')
+
+```
+
+
+
+
+
 
 
 

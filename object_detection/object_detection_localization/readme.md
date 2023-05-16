@@ -73,6 +73,9 @@ These evaluation metrics help quantify the accuracy, robustness, and efficiency 
 #
 Single-stage and two-stage object detection are two different approaches to tackle the task of object detection. Here's an overview of each approach:
 
+![Two-stage-vs-one-stage-object-detection-models](https://github.com/sandeep4055/Tensorflow/assets/70133134/32c7d9ed-2305-49c9-ae64-deb5a3121a64)
+
+
 #### Single-Stage Object Detection:
 ***Single-stage detectors*** aim to detect objects directly in a single pass over the input image. These detectors typically use a predefined set of anchor boxes (also called default boxes) of different sizes and aspect ratios across the image. The detector predicts the presence of objects and adjusts the anchor boxes to tightly fit the objects' bounding boxes.
 

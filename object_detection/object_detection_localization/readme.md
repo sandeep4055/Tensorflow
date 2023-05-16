@@ -9,6 +9,11 @@
     - [Popular object detection datasets](#popular-object-detection-datasets)
     - [Object detection vs image segmentation](#object-detection-vs-image-segmentation)
 
+- [2. Convolutional Neural Networks (CNNs) for Object Detection](#convolutional-neural-networks-cnns-for-object-detection)
+    - [Review of CNN architectures](#review-of-cnn-architectures)
+    -[]
+
+
 
 ## Introduction to Object Detection
 ### Overview of object detection and its applications
@@ -125,6 +130,31 @@ These datasets have played a significant role in advancing object detection rese
 Combining semantic segmentation with object detection leads to instance segmentation, which first detects the object instances, and then segments each within the detected boxes (known in this case as regions of interest).
 
 <img src="https://github.com/sandeep4055/Tensorflow/assets/70133134/e56cb41f-e3c5-42c7-a475-64203952923b" height="500">
+
+
+## Convolutional Neural Networks (CNNs) for Object Detection
+### Review of CNN architectures
+#
+Convolutional neural networks (CNNs) have proven to be very effective in solving a variety of computer vision tasks, including image classification, object detection, segmentation, and more. Here is a brief review of some popular CNN architectures:
+
+1. LeNet-5: LeNet-5 is one of the earliest CNN architectures developed for handwritten digit recognition. It consists of two convolutional layers followed by two fully connected layers.
+
+2. AlexNet: AlexNet is a landmark CNN architecture that won the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) in 2012. It consists of eight layers, including five convolutional layers and three fully connected layers.
+
+3. VGG: The VGG network is a deep CNN architecture developed by the Visual Geometry Group at Oxford University. It has a simple and uniform architecture consisting of several convolutional layers with 3x3 filters and max pooling layers, followed by several fully connected layers.
+
+4. ResNet: ResNet is a deep CNN architecture developed by Microsoft Research in 2015. It introduces a residual learning framework to address the vanishing gradient problem and allow for the training of very deep networks. ResNet has been widely used for image classification and other computer vision tasks.
+
+5. Inception: The Inception network is a family of CNN architectures developed by Google. It introduces the idea of using multiple filter sizes in the same convolutional layer, which can improve the network's ability to capture features at different scales.
+
+6. MobileNet: MobileNet is a family of lightweight CNN architectures designed for mobile and embedded devices. It uses depth-wise separable convolutions to reduce the computational cost of convolutional layers while maintaining accuracy.
+
+7. EfficientNet: EfficientNet is a state-of-the-art CNN architecture that achieves state-of-the-art accuracy while maintaining efficiency. It introduces a new scaling method that uniformly scales all dimensions of depth, width, and resolution, resulting in better performance compared to other models.
+
+These CNN architectures vary in terms of depth, complexity, and computational cost, and have been used for a wide range of computer vision tasks. They have played a significant role in advancing the field of computer vision and have inspired many other CNN architectures that build on their strengths and address their limitations.
+
+
+
 
 
 

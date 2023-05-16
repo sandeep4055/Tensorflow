@@ -110,6 +110,8 @@ Both eager mode and graph mode have their own advantages and use cases. Eager mo
 | 10 |  Data Api  |  https://github.com/sandeep4055/Tensorflow/tree/main/data_api |
 | 11 |  Gradient Tape  |  https://github.com/sandeep4055/Tensorflow/tree/main/gradient_tape |
 | 12 |  Autograph  |  https://github.com/sandeep4055/Tensorflow/tree/main/autograph |
+| 13 |  Distribution Strategies  |  https://github.com/sandeep4055/Tensorflow/tree/main/distrubution_strategies |
+
 
 
 

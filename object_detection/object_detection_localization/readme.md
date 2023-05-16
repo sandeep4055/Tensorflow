@@ -89,9 +89,7 @@ Examples of two-stage object detectors include Faster R-CNN (Region-based Convol
 
 The choice between single-stage and two-stage detectors depends on the specific requirements of the application. If real-time processing speed is crucial, single-stage detectors may be preferred. On the other hand, if accuracy and robustness are more important, particularly in scenarios with smaller or heavily occluded objects, two-stage detectors are often favored.
 
-![60d31e388536752a275673aa_machine-learning-infographic](https://github.com/sandeep4055/Tensorflow/assets/70133134/590c226d-824f-44cf-aeb5-9bb11217f206)
-
-
+<img src="https://github.com/sandeep4055/Tensorflow/assets/70133134/590c226d-824f-44cf-aeb5-9bb11217f206" height="500">
 
 
 

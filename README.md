@@ -1,9 +1,20 @@
 # Tensorflow
+## Table of Contents
+
+- [Tensorflow](#tensorflow-1)
+- [What are Tensors?](#what-are-tensors)
+- [High level VS Low level Tensorflow Api's](#high-level-apis-vs-low-level-apis-in-tensorflow)
+- [Keras VS tf.keras](#keras-vs-tfkeras)
+- [Before Integration of Keras](#before-the-integration-of-keras-into-tensorflow)
+- [Eager mode VS Graph mode execution](#eager-mode-execution-vs-graph-mode-execution)
+- [Table of contents of repo](#table-of-contents-of-repo)
+
+## Tensorflow
 <p>TensorFlow is an open-source framework from Google for creating Machine Learning models. Although the software is written in C++, it is otherwise language-independent and can therefore be used very easily in various programming languages. For many users, the library has now become the standard for Machine Learning, since common models can be built comparatively simply. In addition, state-of-the-art ML models can also be used via TF, such as various transformers.</p>
 
 <img src="https://user-images.githubusercontent.com/70133134/233819149-5246e572-7792-4be5-846b-de4ed8854868.gif" height="450" width="800%">
 
-# What are Tensors?
+## What are Tensors?
 <p>The name TensorFlow may seem a bit strange at first since there is no direct connection to Machine Learning. However, the name comes from the so-called tensors, which are used to train Deep Learning models and therefore form the core of TF.</p>
 
 <p>The tensor is a mathematical function from linear algebra that maps a selection of vectors to a numerical value. The concept originated in physics and was subsequently used in mathematics. Probably the most prominent example that uses the concept of tensors is general relativity.</p>
@@ -14,7 +25,7 @@
 
 #### [How to create tensors? click me...](https://github.com/sandeep4055/Tensorflow/tree/main/basics#readme)
 
-# High level Api's vs Low level Api's in Tensorflow
+## High level Api's vs Low level Api's in Tensorflow
 
 In TensorFlow, high-level and low-level APIs refer to different levels of abstraction and functionality provided by the framework.
 
@@ -43,7 +54,7 @@ Both high-level and low-level APIs have their own advantages and use cases. High
 ![tensorflow_structure_eng](https://github.com/sandeep4055/Tensorflow/assets/70133134/78286357-4f91-4429-abca-93de3b1aee21)
 
 
-# keras vs tf.keras
+## keras vs tf.keras
 
 Keras and tf.keras are both high-level APIs for building and training deep learning models in TensorFlow. However, there are some differences between the two:
 
@@ -57,7 +68,7 @@ Keras and tf.keras are both high-level APIs for building and training deep learn
 
 In summary, tf.keras is the recommended high-level API for TensorFlow. It offers better integration with TensorFlow and takes advantage of TensorFlow-specific features and optimizations. If you are working with TensorFlow, it is recommended to use tf.keras for building and training your models. However, if you have an existing codebase or project built with the standalone Keras library, it can still be used and maintained separately.
 
-# Before the integration of Keras into TensorFlow
+## Before the integration of Keras into TensorFlow
 
 - Before the integration of Keras into TensorFlow, TensorFlow had its own low-level API for building and training deep learning models. This API provided more flexibility and control over the model architecture and training process but required more code and manual implementation of various components.
 
@@ -72,7 +83,7 @@ In summary, tf.keras is the recommended high-level API for TensorFlow. It offers
 - Overall, the integration of Keras into TensorFlow expanded the TensorFlow ecosystem, making it more user-friendly and accessible to a wider range of developers, from beginners to experts. It provided a unified and consistent interface for building and training deep learning models within the TensorFlow framework.
 
 
-# Eager mode execution vs Graph mode execution:
+## Eager mode execution vs Graph mode execution:
 Eager mode and graph mode execution are two different ways of executing operations in TensorFlow. Here's an overview of each:
 
 #### Eager mode execution:
@@ -92,9 +103,8 @@ Eager mode and graph mode execution are two different ways of executing operatio
 
 Both eager mode and graph mode have their own advantages and use cases. Eager mode is more user-friendly and suitable for interactive development and prototyping, while graph mode offers better performance and scalability for production-level training and deployment. TensorFlow 2.x primarily focuses on eager mode execution, but it still supports graph mode for backward compatibility and advanced use cases.
 
-
-
 #
+## Table of contents of repo
 
 | Number | Topic | link | 
 | ----- |  ----- |  ----- |

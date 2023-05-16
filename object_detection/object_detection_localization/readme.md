@@ -11,6 +11,8 @@
 ## Introduction to Object Detection
 ### Overview of object detection and its applications
 #
+![0_e9eu2a2tZyI2qCfN](https://github.com/sandeep4055/Tensorflow/assets/70133134/8bf5fb0b-843a-4ad9-9d6f-d1179a0b585f)
+
 
 ***Object detection*** is a computer vision task that involves identifying and localizing objects within an image or a video. It aims to detect multiple objects of interest and provide their corresponding bounding box coordinates along with the class label. Object detection has numerous applications across various fields, including:
 
@@ -52,6 +54,9 @@ Object detection presents several challenges and requires careful evaluation to 
 
 1. **Intersection over Union (IoU):** IoU measures the overlap between the predicted bounding box and the ground truth bounding box. It is commonly used to determine the accuracy of object localization. IoU is calculated as the ratio of the intersection area to the union area of the two bounding boxes.
 
+![1_h0fLABTVPnIRgNrabuVVnw](https://github.com/sandeep4055/Tensorflow/assets/70133134/f1a64437-8e90-483b-b9c4-3ccbd2dd1899)
+
+
 2. **Average Precision (AP):** AP measures the precision of object detection at various levels of recall. It considers how well the model ranks and predicts objects at different confidence thresholds. AP is commonly used to evaluate object detection performance across different object classes.
 
 3. **Mean Average Precision (mAP):** mAP is the average of AP values across all object classes. It provides an overall performance metric for object detection algorithms. It is often calculated by averaging the AP values at different IoU thresholds.
@@ -68,6 +73,9 @@ These evaluation metrics help quantify the accuracy, robustness, and efficiency 
 #
 Single-stage and two-stage object detection are two different approaches to tackle the task of object detection. Here's an overview of each approach:
 
+![Two-stage-vs-one-stage-object-detection-models](https://github.com/sandeep4055/Tensorflow/assets/70133134/32c7d9ed-2305-49c9-ae64-deb5a3121a64)
+
+
 #### Single-Stage Object Detection:
 ***Single-stage detectors*** aim to detect objects directly in a single pass over the input image. These detectors typically use a predefined set of anchor boxes (also called default boxes) of different sizes and aspect ratios across the image. The detector predicts the presence of objects and adjusts the anchor boxes to tightly fit the objects' bounding boxes.
 
@@ -80,6 +88,8 @@ In the second stage, the region proposals are refined and classified to determin
 Examples of two-stage object detectors include Faster R-CNN (Region-based Convolutional Neural Networks) and Mask R-CNN (which extends Faster R-CNN to also perform instance segmentation). Two-stage detectors tend to have higher accuracy and perform better on complex object detection tasks, especially for smaller objects or instances with heavy occlusion. However, they are usually slower than single-stage detectors due to the two-step process.
 
 The choice between single-stage and two-stage detectors depends on the specific requirements of the application. If real-time processing speed is crucial, single-stage detectors may be preferred. On the other hand, if accuracy and robustness are more important, particularly in scenarios with smaller or heavily occluded objects, two-stage detectors are often favored.
+
+<img src="https://github.com/sandeep4055/Tensorflow/assets/70133134/590c226d-824f-44cf-aeb5-9bb11217f206" height="500">
 
 
 

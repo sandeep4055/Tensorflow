@@ -72,7 +72,7 @@ Object detection presents several challenges and requires careful evaluation to 
 
 5. **F1 Score:** F1 score combines precision and recall into a single metric. It is the harmonic mean of precision and recall, providing a balanced measure of object detection performance.
 
-Mean Average Precision at Different IoU thresholds (mAP@[IoU threshold]): mAP calculated at specific IoU thresholds, such as 0.5, 0.75, or 0.95, provides insights into the model's performance at different levels of object overlap.
+6. **Mean Average Precision at Different IoU thresholds (mAP@[IoU threshold]):** mAP calculated at specific IoU thresholds, such as 0.5, 0.75, or 0.95, provides insights into the model's performance at different levels of object overlap.
 
 These evaluation metrics help quantify the accuracy, robustness, and efficiency of object detection algorithms, enabling comparisons and improvements in the field.
 

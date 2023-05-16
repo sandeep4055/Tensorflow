@@ -15,12 +15,12 @@
 
 
 
-
-
 ## Introduction to the TensorFlow Data API
 ### Overview of the TensorFlow Data API
 #
 The TensorFlow Data API is a powerful feature in TensorFlow that provides a high-performance and efficient way to load, preprocess, and manipulate data for training machine learning models. It offers a unified and flexible interface for handling various types of data, such as images, text, and numerical data. The TensorFlow Data API is designed to optimize data processing pipelines and improve training performance by leveraging parallelism and efficient data prefetching.
+
+![tf data-simple-pipeline](https://github.com/sandeep4055/Tensorflow/assets/70133134/439aac41-7dee-414c-b2f7-7bf49f677a81)
 
 #### Here's an overview of the key features and components of the TensorFlow Data API:
 
@@ -35,6 +35,9 @@ The TensorFlow Data API is a powerful feature in TensorFlow that provides a high
 - **Iterators:** The Data API provides iterators to iterate over the data in a dataset. These iterators allow you to access and consume the data in a streaming fashion, fetching data in batches as needed. The tf.data.Iterator class is used to create and manage iterators, and it provides methods ***like get_next()*** to retrieve the next batch of data.
 
 By leveraging the TensorFlow Data API, you can efficiently load, preprocess, and feed data to your machine learning models. It provides a convenient and flexible way to handle large-scale datasets and enables you to build efficient and performant data processing pipelines for training your models.
+
+![1_3Zi3_VUAYh5w78KGLoO37g](https://github.com/sandeep4055/Tensorflow/assets/70133134/9941a01c-8b1f-4ac2-b42a-7d1cb6908e25)
+
 
 ### Benefits and advantages of using the Data API
 #
@@ -128,6 +131,7 @@ This approach is useful when you have small to moderate-sized datasets that can 
 #
 
 To load data from files such as CSV, JSON, TFRecord, and more, you can use the TensorFlow Data API along with the appropriate dataset methods for each file format.
+
 
 #### Here are examples of loading data from different file formats:
 

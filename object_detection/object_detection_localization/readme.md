@@ -54,6 +54,9 @@ Object detection presents several challenges and requires careful evaluation to 
 
 1. **Intersection over Union (IoU):**IoU measures the overlap between the predicted bounding box and the ground truth bounding box. It is commonly used to determine the accuracy of object localization. IoU is calculated as the ratio of the intersection area to the union area of the two bounding boxes.
 
+![1_h0fLABTVPnIRgNrabuVVnw](https://github.com/sandeep4055/Tensorflow/assets/70133134/f1a64437-8e90-483b-b9c4-3ccbd2dd1899)
+
+
 2. **Average Precision (AP):** AP measures the precision of object detection at various levels of recall. It considers how well the model ranks and predicts objects at different confidence thresholds. AP is commonly used to evaluate object detection performance across different object classes.
 
 3. **Mean Average Precision (mAP):** mAP is the average of AP values across all object classes. It provides an overall performance metric for object detection algorithms. It is often calculated by averaging the AP values at different IoU thresholds.

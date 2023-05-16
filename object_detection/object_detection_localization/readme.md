@@ -11,7 +11,7 @@
 
 - [2. Convolutional Neural Networks (CNNs) for Object Detection](#convolutional-neural-networks-cnns-for-object-detection)
     - [Review of CNN architectures](#review-of-cnn-architectures)
-    -[]
+    - [Usage of Cnn Architectures in Object Detection](#what-is-use-of-cnn-architectures-in-object-detection)
 
 
 
@@ -154,6 +154,7 @@ Convolutional neural networks (CNNs) have proven to be very effective in solving
 These CNN architectures vary in terms of depth, complexity, and computational cost, and have been used for a wide range of computer vision tasks. They have played a significant role in advancing the field of computer vision and have inspired many other CNN architectures that build on their strengths and address their limitations.
 
 
+### What is use of CNN Architectures in Object Detection?
 
 
 

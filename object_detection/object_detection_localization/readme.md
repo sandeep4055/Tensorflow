@@ -7,6 +7,7 @@
     - [Challenges and evaluation metrics for object detection](#challenges-and-evaluation-metrics-for-object-detection)
     - [Single-stage vs. two-stage object detection](#single-stage-vs-two-stage-object-detection)
     - [Popular object detection datasets](#popular-object-detection-datasets)
+    - [Object detection vs image segmentation](#object-detection-vs-image-segmentation)
 
 
 ## Introduction to Object Detection

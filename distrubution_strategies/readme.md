@@ -7,6 +7,7 @@
 - [Distribution Strategies Types](#here-are-some-distribution-strategies-available-in-tensorflow)
 - [tf.distrubute](#tfdistribute)
 - [Functions available in tf.distribute](#what-are-functions-available-in-tfdistrubute)
+- [Implementation of Mirrored strategy on mnist dataset](#implementation-of-mirroredstrategy-using-the-mnist-dataset-in-tensorflow-you-can-follow-these-steps)
 
 ## What is Distribution Strategies?
 In TensorFlow, distribution strategies are used to train models across multiple devices or machines, enabling parallelism and scalability. They allow you to take advantage of multiple GPUs or multiple machines to accelerate training and improve performance. 
@@ -98,7 +99,60 @@ The **tf.distribute** module in TensorFlow provides various functions and classe
 
 These are just a few examples of functions available in tf.distribute. The module provides many more functions and classes to support various distributed training scenarios, including data parallelism, parameter server training, and custom strategies.
 
+## Implementation of MirroredStrategy using the MNIST dataset in TensorFlow, you can follow these steps:
 
+1. Import the necessary libraries:
+
+```python
+import tensorflow as tf
+from tensorflow import keras
+```
+
+2. Load and preprocess the MNIST dataset:
+
+```python
+(x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
+
+# Normalize pixel values
+x_train = x_train.astype("float32") / 255.0
+x_test = x_test.astype("float32") / 255.0
+
+# Add a channels dimension
+x_train = x_train[..., tf.newaxis]
+x_test = x_test[..., tf.newaxis]
+```
+
+3. Define the model inside the scope of MirroredStrategy:
+
+```python
+strategy = tf.distribute.MirroredStrategy()
+
+with strategy.scope():
+    model = keras.Sequential([
+        keras.layers.Conv2D(32, 3, activation="relu", input_shape=(28, 28, 1)),
+        keras.layers.MaxPooling2D(),
+        keras.layers.Flatten(),
+        keras.layers.Dense(64, activation="relu"),
+        keras.layers.Dense(10, activation="softmax")
+    ])
+
+    model.compile(optimizer="adam", loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+```
+
+4. Create the tf.data.Dataset objects for training and evaluation:
+
+```python
+train_dataset = tf.data.Dataset.from_tensor_slices((x_train, y_train)).batch(64)
+test_dataset = tf.data.Dataset.from_tensor_slices((x_test, y_test)).batch(64)
+```
+
+5. Train the model using the fit method:
+
+```python
+model.fit(train_dataset, epochs=5)
+```
+
+- By following these steps, you will be able to train a model using the MirroredStrategy, which will distribute the training across multiple GPUs. Each GPU will process a different batch of data simultaneously, and the gradients will be synchronized across the GPUs to update the model parameters.
 
 
 

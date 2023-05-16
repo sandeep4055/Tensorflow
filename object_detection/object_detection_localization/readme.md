@@ -113,6 +113,15 @@ There are several popular object detection datasets that are commonly used for t
 
 These datasets have played a significant role in advancing object detection research and are commonly used for training and evaluating state-of-the-art models. They vary in terms of scale, object categories, and annotation complexity, catering to different applications and research interests.
 
+### Object detection vs image segmentation
+
+- ***Image segmentation*** is the process of defining which pixels of an object class are found in an image.
+
+- ***Semantic image segmentation*** will mark all pixels belonging to that tag, but won’t define the boundaries of each object.
+
+- ***Object detection*** instead will not segment the object, but will clearly define the location of each individual object instance with a box.
+
+Combining semantic segmentation with object detection leads to instance segmentation, which first detects the object instances, and then segments each within the detected boxes (known in this case as regions of interest).
 
 
 

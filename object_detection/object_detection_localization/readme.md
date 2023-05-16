@@ -170,6 +170,9 @@ CNN architectures play a crucial role in object detection by serving as the back
 
 By leveraging the feature extraction capabilities and learned representations of CNN architectures, object detection models can effectively detect and localize objects in images or video frames. The hierarchical and discriminative features extracted by CNNs greatly contribute to the accuracy and robustness of object detection systems.
 
+<img src="https://github.com/sandeep4055/Tensorflow/assets/70133134/f2288097-5768-42bc-b772-7dcffb662585" height="700">
+
+
 
 
 

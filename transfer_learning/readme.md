@@ -49,6 +49,9 @@ Transfer learning is a machine learning technique that involves leveraging knowl
 
 The main idea behind transfer learning is that the features learned by a model on a large and diverse dataset can be useful for similar tasks. By using a pre-trained model as a starting point, we can benefit from the knowledge it has acquired and save significant training time and computational resources.
 
+![T](https://github.com/sandeep4055/Tensorflow/assets/70133134/aadfb791-2b48-46a2-82a5-88178812711d)
+
+
 #### Here is an overview of the transfer learning process and its applications:
 
 - **Pre-trained Models**: Start with a pre-trained model that has been trained on a large dataset, typically an image recognition dataset like ImageNet. Popular pre-trained models include VGG, ResNet, Inception, and MobileNet.

@@ -50,7 +50,7 @@ Object detection presents several challenges and requires careful evaluation to 
 
 #### Evaluation Metrics for Object Detection:
 
-1. **Intersection over Union (IoU):**IoU measures the overlap between the predicted bounding box and the ground truth bounding box. It is commonly used to determine the accuracy of object localization. IoU is calculated as the ratio of the intersection area to the union area of the two bounding boxes.
+1. **Intersection over Union (IoU):** IoU measures the overlap between the predicted bounding box and the ground truth bounding box. It is commonly used to determine the accuracy of object localization. IoU is calculated as the ratio of the intersection area to the union area of the two bounding boxes.
 
 2. **Average Precision (AP):** AP measures the precision of object detection at various levels of recall. It considers how well the model ranks and predicts objects at different confidence thresholds. AP is commonly used to evaluate object detection performance across different object classes.
 

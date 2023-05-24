@@ -10,6 +10,8 @@
 
 ### Overview of generative AI and its applications
 
+<img src="https://github.com/sandeep4055/Tensorflow/assets/70133134/4c4f4e3a-cd04-4126-a62c-d22d54e937c1" height="400">
+
 Generative AI refers to a branch of artificial intelligence that focuses on creating models and algorithms capable of generating new and original content. These models are designed to learn from existing data and then generate new examples that resemble the training data. Generative AI has gained significant attention and has found numerous applications across various domains. Here's an overview of generative AI and its applications:
 
 1. Image Synthesis: Generative models, such as Generative Adversarial Networks (GANs), can generate realistic and high-resolution images. GANs have been used for tasks like image synthesis, style transfer, image editing, and even creating deepfake images.

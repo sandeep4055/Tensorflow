@@ -232,6 +232,9 @@ Despite these challenges, GANs have significantly advanced the field of generati
 
 Normalizing Flows aim to learn an expressive mapping from a simple distribution, such as a Gaussian distribution, to a complex data distribution. The key idea is to apply a series of invertible transformations to the input data, progressively transforming it to resemble the target distribution. These transformations are designed to be bijective, meaning that both the forward and inverse mappings are defined.
 
+<img width="1332" alt="three-generative-models" src="https://github.com/sandeep4055/Tensorflow/assets/70133134/71273755-65e5-4c09-829c-eff90d589c3a">
+
+
 ##### Here's an overview of the steps involved in Normalizing Flows:
 
 - Base Distribution: A simple distribution, typically a multivariate Gaussian distribution, is chosen as the base distribution. This distribution serves as a starting point for the flow.

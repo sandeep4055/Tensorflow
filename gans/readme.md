@@ -14,6 +14,7 @@
     - [Generative Adversarial Networks (GANs)](#generative-adversarial-networks-gans)
     - [Flow-based models: Normalizing Flows](#flow-based-models-normalizing-flows)
     - [Diffusion Models](#diffusion-models)
+    - [GANS vs VAES vs Diffusion Models](#gans-vs-vaes-vs-diffusion-models)
 
 
 
@@ -288,6 +289,34 @@ Overall, Normalizing Flows provide a powerful framework for generative modeling,
 - They are well-suited for image and video synthesis and can generate high-quality images with sharp and detailed features.
 
 In summary, diffusion models are generative models that generate new data similar to the data on which they are trained by destroying the training data through the successive addition of Gaussian noise and then learning to recover the original data by reversing the noise addition process. They have applications in various domains, but they are well-suited for image and video synthesis.
+
+### GANS vs VAES vs Diffusion Models
+#
+***Generative models*** are used to generate new data similar to the data on which they are trained. GANs, VAEs, and Diffusion Models are all popular deep-learning generative models that have unique features and are suited to different use cases. Here is a comparison of these models based on their key features and use cases:
+
+#### Training Methodology:
+- ***GANs*** consist of two neural networks, a generator, and a discriminator that play a two-player game. The generator takes in random values sampled from a normal distribution and produces a synthetic sample, while the discriminator tries to distinguish between the synthetic and real samples.
+
+- ***VAEs*** use an encoder to map the input data to a latent space, and then use a decoder to map the latent space back to the original data. The goal is to learn a compressed representation of the input data that can be used to generate new samples.
+
+- ***Diffusion Models*** are trained by adding noise to images and removing it, thus generating new and diverse high-resolution images that are reminiscent of the original data.
+
+#### Quality of Generated Data:
+- ***GANs*** can generate high-quality photorealistic images, but they can suffer from mode collapse, where the generator produces a limited range of outputs.
+- ***VAEs*** can generate images that are less realistic than GANs but can be used for data compression and data generation.
+- ***Diffusion Models*** are better at generating sharp and detailed features, making them ideal for image and video synthesis.
+
+#### Ease of Training:
+- ***GANs*** can be difficult to train and stabilize, as they require tuning of multiple hyperparameters.
+- ***VAEs*** are easier to train than GANs, as they have a simple objective function and require fewer hyperparameters.
+- ***Diffusion Models*** require multiple iterations of adding noise and removing it, making them computationally expensive and time-consuming to train.
+
+#### Applicability to Different Domains:
+- ***GANs*** are best suited for image and video synthesis, but can also be used for data augmentation, style transfer, and other applications.
+- ***VAEs*** are best suited for data compression, but can also be used for data generation in low-dimensional spaces.
+- ***Diffusion Models*** are best suited for image and video synthesis, but can also be used for audio and text generation.
+
+In summary, GANs, VAEs, and Diffusion Models are all powerful generative models that have unique features and are suited to different use cases. The choice of the model depends on the specific requirements of the application, such as the quality of generated data, ease of training, and applicability to different domains.
 
 
 

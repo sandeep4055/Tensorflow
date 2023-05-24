@@ -8,6 +8,12 @@
     - [The role of generative AI in creative tasks](#the-role-of-generative-ai-in-creative-tasks)
     - [Challenges and ethical considerations in generative AI](#challenges-and-ethical-considerations-in-generative-ai)
 
+- [Generative Models: Fundamentals](#generative-models-fundamentals)
+    -[Introduction to generative models](#introduction-to-generative-models)
+
+
+
+
 
 ## Introduction to Generative AI
 
@@ -120,6 +126,31 @@ Generative AI brings forth various challenges and ethical considerations that ne
 - ***Ethical Use and Human Consent:*** The ethical use of generative AI involves obtaining informed consent from individuals whose data is used for training or generating content. Respecting privacy, consent, and ensuring that generative AI is used for beneficial purposes is of utmost importance.
 
 Addressing these challenges and ethical considerations requires a multi-stakeholder approach involving researchers, policymakers, industry leaders, and the broader society. It involves the development of responsible AI practices, regulatory frameworks, and ethical guidelines that promote transparency, fairness, accountability, and the protection of individual rights. By addressing these challenges, generative AI can be harnessed for positive societal impact while minimizing potential harms.
+
+## Generative Models: Fundamentals
+
+### Introduction to generative models
+#
+
+Generative models are a class of machine learning models designed to generate new data samples that resemble a given dataset. These models capture the underlying distribution of the training data and can generate new samples that exhibit similar characteristics, such as images, text, or sound.
+
+The key idea behind generative models is to learn the probability distribution of the training data, allowing the model to generate new data points that follow the same distribution. Generative models can be used for various tasks, including data synthesis, data augmentation, anomaly detection, and creative applications.
+
+##### There are several types of generative models, but two widely used ones are:
+
+1. ***Generative Adversarial Networks (GANs):*** GANs consist of two components: a generator and a discriminator. The generator generates new samples from random noise, aiming to produce data that is indistinguishable from real data. The discriminator, on the other hand, tries to distinguish between real and generated data. The generator and discriminator are trained simultaneously, with the goal of improving the generator's ability to generate realistic data while the discriminator becomes better at discriminating real and generated data. GANs have been successfully used for generating realistic images, videos, and audio.
+
+2. ***Variational Autoencoders (VAEs):*** VAEs are generative models that combine a probabilistic encoder and decoder. The encoder maps the input data to a latent space, where the data is represented by a distribution of latent variables. The decoder then takes samples from the latent space and reconstructs the original data. VAEs learn to generate new samples by sampling from the learned latent space distribution. VAEs are used for tasks like image generation, data compression, and learning disentangled representations.
+
+
+Generative models continue to advance and have shown impressive capabilities in generating highly realistic and diverse data. They have the potential to transform various industries and open up new possibilities for data synthesis, creative applications, and data-driven decision-making.
+
+
+
+
+
+
+
 
 
 

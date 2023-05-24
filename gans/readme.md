@@ -2,8 +2,9 @@
 
 ## Table of contents
 
--[Introduction to Generative AI](#introduction-to-generative-ai)
+- [Introduction to Generative AI](#introduction-to-generative-ai)
     - [Overview of generative AI and its applications](#overview-of-generative-ai-and-its-applications)
+    
 
 ## Introduction to Generative AI
 

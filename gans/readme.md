@@ -59,7 +59,7 @@ These are just a few examples of how generative AI is being applied across diffe
 
 ### Generative models vs. discriminative models
 #
-***Generative models*** and ***discriminative models*** are two fundamental approaches in machine learning that serve different purposes and have distinct characteristics. Here's a comparison between generative models and discriminative models:
+***Generative models*** and ***Discriminative models*** are two fundamental approaches in machine learning that serve different purposes and have distinct characteristics. Here's a comparison between generative models and discriminative models:
 
 - ***Generative Models:***
 

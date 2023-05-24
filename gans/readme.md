@@ -189,6 +189,9 @@ Overall, autoencoders and VAEs are powerful neural network architectures that le
 #
 ***Generative Adversarial Networks (GANs)*** are a class of deep learning models used for generative modeling, particularly in generating realistic synthetic data such as images, videos, and audio. GANs consist of two components: a generator and a discriminator, which are trained in an adversarial manner.
 
+<img src="https://github.com/sandeep4055/Tensorflow/assets/70133134/b7b29c85-a862-4433-b51e-4f483a293d2d" height="600">
+
+
 ##### Here's how GANs work:
 
 - ***Generator:*** The generator takes random noise (typically sampled from a simple distribution like Gaussian) as input and generates synthetic data samples. The generator learns to transform the input noise into data that resembles the training data distribution.

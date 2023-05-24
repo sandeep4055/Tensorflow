@@ -4,6 +4,7 @@
 
 - [Introduction to Generative AI](#introduction-to-generative-ai)
     - [Overview of generative AI and its applications](#overview-of-generative-ai-and-its-applications)
+    - [Historical background of Generative AI](#historical-background-of-generative-ai)
     - [Generative models vs Discriminative models](#generative-models-vs-discriminative-models)
     - [The role of generative AI in creative tasks](#the-role-of-generative-ai-in-creative-tasks)
     - [Challenges and ethical considerations in generative AI](#challenges-and-ethical-considerations-in-generative-ai)
@@ -69,6 +70,27 @@
 
 
 These are just a few examples of how generative AI is being applied across different industries. As research and development in this field continue, we can expect to see even more innovative applications of generative AI in the future.
+
+### Historical background of Generative AI
+#
+Generative AI has a long history that dates back to the early days of artificial intelligence research. Here is a brief historical background of Generative AI:
+1. 1932: Georges Artsrouni invented a machine that could translate between languages on a phonetic basis.
+2. 1940s - 1950s: The Birth of Artificial Intelligence.
+    - 1948: Claude Shannon published his paper "A Mathematical Theory of Communications," which referenced the idea of n-grams.
+    - 1950: Alan Turing published his paper "Computing Machinery and Intelligence," which introduced the Turing Test.
+3. 1960s - 1980s: The Emergence of Expert Systems.
+    - 1960: The General Problem Solver (GPS) was developed.
+    - 1980: The first expert system, MYCIN, was developed for diagnosing blood infections.
+4. 1990s - 2000s: The Rise of Machine Learning.
+    - 1995: Backpropagation algorithm was introduced.
+    - 2006: Geoffrey Hinton introduced the idea of deep learning.
+5. 2010s - Present: The Age of Generative AI.
+    - 2014: Generative Adversarial Networks (GANs) were introduced by Ian Goodfellow.
+    - 2015: Variational Autoencoders (VAEs) were introduced.
+    - 2020: OpenAI introduced GPT-3, a language model that can generate human-like text.
+
+Generative AI has come a long way since its inception. The recent surge in generative AI's popularity can be attributed to the increasing availability of labeled datasets, faster computers, and new ways of encoding unlabeled data. The development of deep learning has also made generative AI techniques more powerful and efficient. Today, Generative AI has numerous applications and is considered an important part of AI research and development, with the potential to revolutionize many industries.
+
 
 ### Generative models vs Discriminative models
 #

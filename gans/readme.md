@@ -268,6 +268,9 @@ Overall, Normalizing Flows provide a powerful framework for generative modeling,
 # 
 ***Diffusion models*** are a type of generative model used to create data closely resembling the data on which they are trained. They have emerged as a powerful new family of deep generative models with record-breaking performance in many applications, including image synthesis, video generation, and molecule design.
 
+![kRXOGzd](https://github.com/sandeep4055/Tensorflow/assets/70133134/c6c9199c-e7cd-4c0c-a8d6-1835bd3a57a0)
+
+
 #### Here is a detailed explanation of how diffusion models work:
 ##### Destroying Training Data:
 - Fundamentally, diffusion models work by destroying training data through the successive addition of Gaussian noise.

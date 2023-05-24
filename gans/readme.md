@@ -61,6 +61,8 @@ These are just a few examples of how generative AI is being applied across diffe
 #
 ***Generative models*** and ***Discriminative models*** are two fundamental approaches in machine learning that serve different purposes and have distinct characteristics. Here's a comparison between generative models and discriminative models:
 
+![gen_disc_model-1](https://github.com/sandeep4055/Tensorflow/assets/70133134/83d370c3-55b9-4950-8b96-843a5de4ccd8)
+
 - ***Generative Models:***
 
     - ***Objective:*** Generative models aim to model the underlying probability distribution of the input data and generate new samples from that distribution.

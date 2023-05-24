@@ -9,7 +9,7 @@
     - [Challenges and ethical considerations in generative AI](#challenges-and-ethical-considerations-in-generative-ai)
 
 - [Generative Models: Fundamentals](#generative-models-fundamentals)
-    -[Introduction to generative models](#introduction-to-generative-models)
+    - [Introduction to generative models](#introduction-to-generative-models)
 
 
 

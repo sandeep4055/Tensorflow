@@ -12,7 +12,7 @@
     - [Introduction to generative models](#introduction-to-generative-models)
     - [Autoencoders and Variational Autoencoders (VAEs)](#autoencoders-and-variational-autoencoders-vaes)
     - [Generative Adversarial Networks (GANs)](#generative-adversarial-networks-gans)
-
+    - [Flow-based models: Normalizing Flows](#flow-based-models-normalizing-flows)
 
 
 
@@ -225,6 +225,49 @@ Overall, autoencoders and VAEs are powerful neural network architectures that le
 - ***Ethical Considerations:*** GANs raise ethical concerns related to the potential misuse of generated synthetic data, such as deepfakes and unauthorized reproductions.
 
 Despite these challenges, GANs have significantly advanced the field of generative modeling, enabling the generation of realistic and diverse synthetic data. They have applications in computer vision, art, data augmentation, and more, with ongoing research focused on improving stability, diversity, and evaluation techniques.
+
+### Flow-based models: Normalizing Flows
+#
+***Flow-based models*** are a class of generative models that learn the underlying probability distribution of data by transforming a simple base distribution through a series of invertible mappings. One popular type of flow-based model is known as Normalizing Flows.
+
+Normalizing Flows aim to learn an expressive mapping from a simple distribution, such as a Gaussian distribution, to a complex data distribution. The key idea is to apply a series of invertible transformations to the input data, progressively transforming it to resemble the target distribution. These transformations are designed to be bijective, meaning that both the forward and inverse mappings are defined.
+
+##### Here's an overview of the steps involved in Normalizing Flows:
+
+- Base Distribution: A simple distribution, typically a multivariate Gaussian distribution, is chosen as the base distribution. This distribution serves as a starting point for the flow.
+
+- Transformation Layers: A series of invertible transformations, often implemented as neural networks, are applied to the data. These transformations gradually map the data from the base distribution to the target distribution.
+
+- Flow Equation: Each transformation layer consists of a forward pass and an inverse pass. The forward pass maps data from the base distribution to the target distribution, while the inverse pass reconstructs the original data from the transformed distribution.
+
+- Jacobian Determinant: As the transformations are applied, the Jacobian determinant of each transformation is computed. The Jacobian determinant accounts for the change in volume between the transformed and original distributions and is used to adjust the probability density.
+
+- Training: The parameters of the transformation layers are learned by maximizing the log-likelihood of the training data. This is typically done using maximum likelihood estimation or variational inference methods.
+
+By applying a sequence of invertible transformations, Normalizing Flows can learn complex data distributions and generate new samples by transforming samples from the base distribution. They provide a flexible and expressive framework for generative modeling and have applications in tasks like image generation, density estimation, and data synthesis.
+
+##### Benefits of Normalizing Flows include:
+
+- Exact Likelihood Evaluation: Normalizing Flows allow for exact evaluation of the likelihood function, enabling accurate density estimation and likelihood-based tasks.
+
+- Invertibility: The invertibility of the transformations ensures that both sampling and density estimation can be performed efficiently.
+
+- Rich Expressiveness: With a sufficient number of transformation layers and appropriate architectures, Normalizing Flows can capture complex dependencies and high-dimensional distributions.
+
+- Latent Space Manipulation: The invertible nature of Normalizing Flows enables meaningful operations in the latent space, such as interpolation and morphing between data samples.
+
+- Despite their advantages, Normalizing Flows also face challenges, such as the computational cost of applying a large number of transformations and the limited flexibility in modeling multimodal distributions compared to other generative models like GANs.
+
+Overall, Normalizing Flows provide a powerful framework for generative modeling, allowing for accurate density estimation and generation of complex data distributions through invertible transformations. Ongoing research in this area focuses on improving the expressiveness and scalability of flow-based models to handle increasingly challenging tasks.
+
+
+
+
+
+
+
+
+
 
 
 

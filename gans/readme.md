@@ -157,6 +157,9 @@ Generative models continue to advance and have shown impressive capabilities in 
 #
 ***Autoencoders*** and ***Variational Autoencoders (VAEs)*** are popular neural network architectures used for unsupervised learning, data compression, and generative modeling. While both models are based on the same fundamental idea of encoding and decoding data, VAEs introduce a probabilistic approach that enables more flexible and expressive generative capabilities.
 
+<img src="https://github.com/sandeep4055/Tensorflow/assets/70133134/040f42ac-477a-4c5b-ac6e-3a6d7adf1e04" height="550">
+
+
 #### Autoencoders:
 An autoencoder is a type of neural network that aims to learn a compressed representation, or encoding, of the input data. It consists of two main components: an encoder and a decoder.
 

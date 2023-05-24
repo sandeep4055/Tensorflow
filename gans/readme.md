@@ -10,6 +10,8 @@
 
 - [Generative Models: Fundamentals](#generative-models-fundamentals)
     - [Introduction to generative models](#introduction-to-generative-models)
+    - [Autoencoders and Variational Autoencoders (VAEs)](#autoencoders-and-variational-autoencoders-vaes)
+
 
 
 
@@ -147,6 +149,41 @@ The key idea behind generative models is to learn the probability distribution o
 
 
 Generative models continue to advance and have shown impressive capabilities in generating highly realistic and diverse data. They have the potential to transform various industries and open up new possibilities for data synthesis, creative applications, and data-driven decision-making.
+
+### Autoencoders and Variational Autoencoders (VAEs)
+#
+***Autoencoders*** and ***Variational Autoencoders (VAEs)*** are popular neural network architectures used for unsupervised learning, data compression, and generative modeling. While both models are based on the same fundamental idea of encoding and decoding data, VAEs introduce a probabilistic approach that enables more flexible and expressive generative capabilities.
+
+#### Autoencoders:
+An autoencoder is a type of neural network that aims to learn a compressed representation, or encoding, of the input data. It consists of two main components: an encoder and a decoder.
+
+- ***Encoder:*** The encoder maps the input data to a lower-dimensional latent space representation, also known as the bottleneck or encoding layer. The encoder learns to extract relevant features or patterns from the input data.
+
+- ***Decoder:*** The decoder takes the compressed representation from the encoder and reconstructs the original input data. The decoder aims to produce an output that is as close as possible to the input data, capturing the essential information.
+
+Autoencoders are trained by minimizing the reconstruction loss, which measures the difference between the input data and the reconstructed output. By learning an efficient representation of the data, autoencoders can be used for tasks like data compression, denoising, and anomaly detection.
+
+#### Variational Autoencoders (VAEs):
+Variational Autoencoders (VAEs) extend the idea of autoencoders by introducing a probabilistic framework for the latent space. VAEs enable generative modeling by learning a probabilistic distribution of the latent variables.
+
+- ***Encoder:*** Similar to autoencoders, the encoder maps the input data to a latent space representation. However, instead of producing a fixed encoding, the encoder outputs the parameters of a probability distribution (typically a Gaussian distribution) that describes the latent variables.
+
+- ***Latent Variable Sampling:*** During training, VAEs introduce a sampling step to generate a latent variable sample from the learned distribution. This introduces stochasticity and allows for random sampling in the latent space.
+
+- ***Decoder:*** The decoder takes the sampled latent variable and reconstructs the data. Like traditional autoencoders, the decoder aims to produce an output that is similar to the input data.
+
+- ***Loss Function:*** VAEs use a loss function that consists of two components: the reconstruction loss, which measures the similarity between the input and reconstructed data, and the KL divergence loss, which encourages the learned latent distribution to be close to a predefined prior distribution.
+
+The key benefit of VAEs is their ability to generate new data by sampling latent variables from the learned distribution. By controlling the sampling process, it is possible to explore the latent space and generate diverse outputs. VAEs have found applications in image synthesis, data generation, and representation learning.
+
+Overall, autoencoders and VAEs are powerful neural network architectures that learn compressed representations of input data. While autoencoders focus on reconstructing data, VAEs introduce probabilistic modeling and enable generative capabilities, making them well-suited for tasks involving data generation and creative applications.
+
+
+
+
+
+
+
 
 
 

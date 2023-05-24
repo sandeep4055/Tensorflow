@@ -295,6 +295,8 @@ In summary, diffusion models are generative models that generate new data simila
 
 ### GANS vs VAES vs Diffusion Models
 #
+![1__5GpdejeOvt61ew4aPtT_g](https://github.com/sandeep4055/Tensorflow/assets/70133134/25d0ef73-0997-46ee-a8a2-1a352b33e637)
+
 ***Generative models*** are used to generate new data similar to the data on which they are trained. GANs, VAEs, and Diffusion Models are all popular deep-learning generative models that have unique features and are suited to different use cases. Here is a comparison of these models based on their key features and use cases:
 
 #### Training Methodology:
@@ -318,6 +320,9 @@ In summary, diffusion models are generative models that generate new data simila
 - ***GANs*** are best suited for image and video synthesis, but can also be used for data augmentation, style transfer, and other applications.
 - ***VAEs*** are best suited for data compression, but can also be used for data generation in low-dimensional spaces.
 - ***Diffusion Models*** are best suited for image and video synthesis, but can also be used for audio and text generation.
+
+![GANs_Diffusion_Autoencoders](https://github.com/sandeep4055/Tensorflow/assets/70133134/b1fd7630-791c-402b-b69a-1cc0a345c4ee)
+
 
 In summary, GANs, VAEs, and Diffusion Models are all powerful generative models that have unique features and are suited to different use cases. The choice of the model depends on the specific requirements of the application, such as the quality of generated data, ease of training, and applicability to different domains.
 

@@ -50,6 +50,7 @@ Generative AI refers to a branch of artificial intelligence that focuses on crea
 
 8. Virtual Worlds and Game Design: Generative AI can generate virtual worlds, landscapes, and characters for video games and virtual reality experiences. It can also simulate realistic behaviors, interactions, and narratives within these environments.
 
+![1531f5db-d061-4e94-82c9-0e3424110798_480x270](https://github.com/sandeep4055/Tensorflow/assets/70133134/07a87647-8369-47fe-9ade-81271bbdf58b)
 
 
 These are just a few examples of how generative AI is being applied across different industries. As research and development in this field continue, we can expect to see even more innovative applications of generative AI in the future.

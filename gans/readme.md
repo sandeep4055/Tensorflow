@@ -13,6 +13,7 @@
     - [Autoencoders and Variational Autoencoders (VAEs)](#autoencoders-and-variational-autoencoders-vaes)
     - [Generative Adversarial Networks (GANs)](#generative-adversarial-networks-gans)
     - [Flow-based models: Normalizing Flows](#flow-based-models-normalizing-flows)
+    - [Diffusion Models](#diffusion-models)
 
 
 
@@ -262,6 +263,32 @@ By applying a sequence of invertible transformations, Normalizing Flows can lear
 - Despite their advantages, Normalizing Flows also face challenges, such as the computational cost of applying a large number of transformations and the limited flexibility in modeling multimodal distributions compared to other generative models like GANs.
 
 Overall, Normalizing Flows provide a powerful framework for generative modeling, allowing for accurate density estimation and generation of complex data distributions through invertible transformations. Ongoing research in this area focuses on improving the expressiveness and scalability of flow-based models to handle increasingly challenging tasks.
+
+### Diffusion models
+# 
+***Diffusion models*** are a type of generative model used to create data closely resembling the data on which they are trained. They have emerged as a powerful new family of deep generative models with record-breaking performance in many applications, including image synthesis, video generation, and molecule design.
+
+#### Here is a detailed explanation of how diffusion models work:
+##### Destroying Training Data:
+- Fundamentally, diffusion models work by destroying training data through the successive addition of Gaussian noise.
+- This means that the model takes an image and adds noise to it, making it more difficult to recognize.
+
+##### Learning to Recover the Data:
+- The model then learns to recover the original image by reversing the noise addition process.
+- This is done by training the model to predict the original image from the noisy image.
+
+##### Repeating the Process:
+- The process is repeated multiple times to generate new and diverse high-resolution images that are reminiscent of the original data.
+- Each iteration of the process adds more noise to the image, making it more difficult to recognize, and then learns to recover the original image.
+
+#### Applications:
+
+- Diffusion models can generate data similar to the data they are trained on, such as generating new photos of cats if the model trains on images of cats.
+- They are used for various applications, including data augmentation, simulation, and creative content generation.
+- They are well-suited for image and video synthesis and can generate high-quality images with sharp and detailed features.
+
+In summary, diffusion models are generative models that generate new data similar to the data on which they are trained by destroying the training data through the successive addition of Gaussian noise and then learning to recover the original data by reversing the noise addition process. They have applications in various domains, but they are well-suited for image and video synthesis.
+
 
 
 

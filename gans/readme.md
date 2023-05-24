@@ -138,6 +138,9 @@ The key idea behind generative models is to learn the probability distribution o
 
 ##### There are several types of generative models, but two widely used ones are:
 
+![An-illustration-of-the-internal-architectures-of-A-VAEs-and-B-GANs-Arrows-represent](https://github.com/sandeep4055/Tensorflow/assets/70133134/853fadce-19a2-42cb-beb3-36cdedbccbcb)
+
+
 1. ***Generative Adversarial Networks (GANs):*** GANs consist of two components: a generator and a discriminator. The generator generates new samples from random noise, aiming to produce data that is indistinguishable from real data. The discriminator, on the other hand, tries to distinguish between real and generated data. The generator and discriminator are trained simultaneously, with the goal of improving the generator's ability to generate realistic data while the discriminator becomes better at discriminating real and generated data. GANs have been successfully used for generating realistic images, videos, and audio.
 
 2. ***Variational Autoencoders (VAEs):*** VAEs are generative models that combine a probabilistic encoder and decoder. The encoder maps the input data to a latent space, where the data is represented by a distribution of latent variables. The decoder then takes samples from the latent space and reconstructs the original data. VAEs learn to generate new samples by sampling from the learned latent space distribution. VAEs are used for tasks like image generation, data compression, and learning disentangled representations.

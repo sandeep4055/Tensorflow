@@ -359,6 +359,9 @@ Generative Adversarial Networks (GANs) are a type of neural network that perform
 
 ##### Let's discuss the architecture and components of Generative Adversarial Networks (GANs):
 
+![gan_diagram_generator](https://github.com/sandeep4055/Tensorflow/assets/70133134/37562cac-927c-42d1-a5d3-43d5e25f2c01)
+
+
 #### Generator:
 The generator is a key component of a GAN. It takes a random noise vector as input and generates synthetic data samples. The generator is typically implemented as a deep neural network, often using convolutional layers in the case of image data. Its role is to learn to generate realistic and high-quality data that resembles the training data.
 

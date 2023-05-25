@@ -405,13 +405,13 @@ The training process involves iteratively updating the generator and discriminat
 
 ##### Training Algorithm:
 The training algorithm for GANs typically follows these steps:
-a. Generate a batch of random noise vectors as input for the generator.
-b. Generate synthetic data samples by passing the noise vectors through the generator.
-c. Sample a batch of real data samples from the training dataset.
-d. Train the discriminator on the combined batch of real and generated samples by computing the discriminator loss and updating its weights.
-e. Generate a new batch of noise vectors for the generator.
-f. Train the generator by computing the generator loss based on the discriminator's classification of the generated samples and updating its weights.
-g. Repeat steps (a) to (f) for a certain number of iterations.
+1. Generate a batch of random noise vectors as input for the generator.
+2. Generate synthetic data samples by passing the noise vectors through the generator.
+3. Sample a batch of real data samples from the training dataset.
+4. Train the discriminator on the combined batch of real and generated samples by computing the discriminator loss and updating its weights.
+5. Generate a new batch of noise vectors for the generator.
+6. Train the generator by computing the generator loss based on the discriminator's classification of the generated samples and updating its weights.
+7. Repeat steps (1) to (6) for a certain number of iterations.
 
 #### Convergence and Stability:
 Training GANs can be challenging, and stability is a common concern. Techniques like mini-batch discrimination, gradient penalty, or spectral normalization can be employed to improve training stability and avoid issues like mode collapse or vanishing gradients.

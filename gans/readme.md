@@ -434,7 +434,7 @@ Both the generator and discriminator are trained simultaneously in an adversaria
 
 Vanilla GANs have been applied to various tasks, such as image generation, data augmentation, and unsupervised feature learning. However, training Vanilla GANs can be challenging due to issues like mode collapse, vanishing gradients, and difficulty in finding the right balance between the generator and discriminator. To address these challenges, researchers have proposed various modifications and extensions to the original GAN architecture, such as Deep Convolutional GANs (DCGANs), Wasserstein GANs (WGANs), and Conditional GANs (cGANs).
 
-- [Vannila gan implementation notebook](#https://github.com/sandeep4055/Tensorflow/blob/main/gans/vannila_gan.ipynb)
+- [Vannila gan implementation notebook](https://github.com/sandeep4055/Tensorflow/blob/main/gans/vannila_gan.ipynb)
 
 ### Improving Vannila GAN stability
 

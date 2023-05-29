@@ -475,6 +475,9 @@ Improving the stability of Generative Adversarial Networks (GANs) is an active a
 
 ### DCGAN (Deep Convolutional GAN)
 #
+
+![Deep-convolutional-generative-adversarial-networks-DCGAN-for-generative-model-of-BF-NSP](https://github.com/sandeep4055/Tensorflow/assets/70133134/63d8e836-7852-4e9f-9c32-f423011fed37)
+
 Deep Convolutional Generative Adversarial Networks (DCGANs) are a type of Generative Adversarial Network (GAN) that uses deep convolutional neural networks for both the generator and discriminator components.DCGANs were proposed by Radford et al. in their paper "Unsupervised Representation Learning With Deep Convolutional Generative Adversarial Networks"The main goal of DCGANs is to generate new data from the same distribution as the training data.
 
 A GAN consists of two models: a generator and a discriminator. The generator produces synthetic data, while the discriminator tries to differentiate between real and fake data. Both models are trained simultaneously in an adversarial process, where the generator tries to create data that can fool the discriminator, and the discriminator tries to become better at detecting whether the data is real or fake.

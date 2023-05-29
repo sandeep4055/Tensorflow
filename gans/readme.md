@@ -434,6 +434,8 @@ Both the generator and discriminator are trained simultaneously in an adversaria
 
 Vanilla GANs have been applied to various tasks, such as image generation, data augmentation, and unsupervised feature learning. However, training Vanilla GANs can be challenging due to issues like mode collapse, vanishing gradients, and difficulty in finding the right balance between the generator and discriminator. To address these challenges, researchers have proposed various modifications and extensions to the original GAN architecture, such as Deep Convolutional GANs (DCGANs), Wasserstein GANs (WGANs), and Conditional GANs (cGANs).
 
+- [Vannila gan implementation notebook](#https://github.com/sandeep4055/Tensorflow/blob/main/gans/vannila_gan.ipynb)
+
 ### Improving Vannila GAN stability
 
 Improving the stability of Vanilla GANs can be challenging due to issues such as mode collapse, vanishing gradients, and difficulty in finding the right balance between the generator and discriminator. However, there are several techniques that can help improve the stability of Vanilla GANs:
@@ -457,6 +459,9 @@ Improving the stability of Vanilla GANs can be challenging due to issues such as
 9. ***Monitoring and early stopping:*** Keep track of the training progress by monitoring the loss functions and other metrics. If the training becomes unstable or the metrics start to degrade, you can stop the training early and revert to a previous checkpoint.
 
 These techniques can help improve the stability of Vanilla GANs. However, it is essential to experiment with different combinations of these techniques and tune the hyperparameters to find the best configuration for your specific problem.
+
+- [Vannila gan stabilised with leaky relu](#https://github.com/sandeep4055/Tensorflow/blob/main/gans/Vannila_gan_leakyrelu.ipynb)
+- [Vannila gan stabilised with Normalization and regularization](#https://github.com/sandeep4055/Tensorflow/blob/main/gans/Vannila_gan_batchnorm.ipynb)
 
 
 

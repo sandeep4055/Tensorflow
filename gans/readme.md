@@ -460,8 +460,8 @@ Improving the stability of Vanilla GANs can be challenging due to issues such as
 
 These techniques can help improve the stability of Vanilla GANs. However, it is essential to experiment with different combinations of these techniques and tune the hyperparameters to find the best configuration for your specific problem.
 
-- [Vannila gan stabilised with leaky relu](#https://github.com/sandeep4055/Tensorflow/blob/main/gans/Vannila_gan_leakyrelu.ipynb)
-- [Vannila gan stabilised with Normalization and regularization](#https://github.com/sandeep4055/Tensorflow/blob/main/gans/Vannila_gan_batchnorm.ipynb)
+- [Vannila gan stabilised with leaky relu](https://github.com/sandeep4055/Tensorflow/blob/main/gans/Vannila_gan_leakyrelu.ipynb)
+- [Vannila gan stabilised with Normalization and regularization](https://github.com/sandeep4055/Tensorflow/blob/main/gans/Vannila_gan_batchnorm.ipynb)
 
 
 

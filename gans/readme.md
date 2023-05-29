@@ -429,6 +429,7 @@ It's important to note that various GAN variants may employ different loss funct
 
 ### Vannila GAN
 #
+<img src="https://github.com/sandeep4055/Tensorflow/assets/70133134/6e102e11-2e12-443f-bbd4-963d80933abc" height="500">
 
 A ***Vanilla Generative Adversarial Network (GAN)*** is a type of generative model that was introduced by ***Ian Goodfellow*** and his colleagues in 2014. The main goal of GANs is to generate new data that resembles the distribution of the training data. Vanilla GANs consist of two main components: a generator and a discriminator.
 
@@ -475,6 +476,9 @@ Improving the stability of Generative Adversarial Networks (GANs) is an active a
 
 ### DCGAN (Deep Convolutional GAN)
 #
+
+![Deep-convolutional-generative-adversarial-networks-DCGAN-for-generative-model-of-BF-NSP](https://github.com/sandeep4055/Tensorflow/assets/70133134/63d8e836-7852-4e9f-9c32-f423011fed37)
+
 Deep Convolutional Generative Adversarial Networks (DCGANs) are a type of Generative Adversarial Network (GAN) that uses deep convolutional neural networks for both the generator and discriminator components.DCGANs were proposed by Radford et al. in their paper "Unsupervised Representation Learning With Deep Convolutional Generative Adversarial Networks"The main goal of DCGANs is to generate new data from the same distribution as the training data.
 
 DCGANs are an extension of Vanilla GANs that use deep convolutional networks for both the generator and discriminator, making them more suitable for image and video data. They also incorporate additional architectural constraints and best practices to improve training stability and image generation quality.

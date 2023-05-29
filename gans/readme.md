@@ -429,6 +429,7 @@ It's important to note that various GAN variants may employ different loss funct
 
 ### Vannila GAN
 #
+<img src="https://github.com/sandeep4055/Tensorflow/assets/70133134/6e102e11-2e12-443f-bbd4-963d80933abc" height="600">
 
 A ***Vanilla Generative Adversarial Network (GAN)*** is a type of generative model that was introduced by ***Ian Goodfellow*** and his colleagues in 2014. The main goal of GANs is to generate new data that resembles the distribution of the training data. Vanilla GANs consist of two main components: a generator and a discriminator.
 

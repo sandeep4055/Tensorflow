@@ -20,6 +20,7 @@
 - [Generative Adversarial Networks (GANs)](#generative-adversarial-networks-gans)
     - [Architecture and components of GANs](#architecture-and-components-of-gans)
     - [Training process and loss functions in GANs](#training-process-and-loss-functions-in-gans)
+    - [Transposed Convolution](#)
     - [Vannila GAN](#vannila-gan)
         - [Improving Vannila GAN stability](#improving-vannila-gan-stability)
     - [Improving GAN stability: DCGAN, WGAN, etc.](#improving-gan-stability-dcgan-wgan-etc)
@@ -426,6 +427,44 @@ Training GANs can be challenging, and stability is a common concern. Techniques 
 Once the GAN is trained, the generator can be used to generate new data samples by providing random noise vectors as input. By sampling from the generator, new data points that resemble the training set can be generated.
 
 It's important to note that various GAN variants may employ different loss functions or training techniques. Some popular variants include Deep Convolutional GANs (DCGANs), Wasserstein GANs (WGANs), and Conditional GANs (cGANs), among others. These variants introduce modifications to the loss functions and training algorithms to address specific challenges and improve the quality of generated samples.
+
+#### Transposed Convolutions
+#
+Transposed convolution, also known as fractionally-strided convolution or deconvolution, is a type of convolutional operation used in deep learning models. It is commonly used in tasks such as image upsampling, image generation, and semantic segmentation.
+
+In transposed convolution, the input and output dimensions are reversed compared to regular convolution. While regular convolution reduces the spatial dimensions of the input, transposed convolution increases the spatial dimensions of the input.
+
+Transposed convolution can be thought of as the inverse operation of regular convolution. Instead of applying filters to the input and computing the dot product, transposed convolution applies filters to the output and computes the dot product, which leads to the expansion of the feature maps.
+
+**For a given size of the input (i), kernel (k), padding (p), and stride (s), the size of the output feature map (o) generated is given by
+`o = (i-1)*s+k-2p`**
+
+
+In TensorFlow, you can use the Conv2DTranspose layer to perform transposed convolution. Here's an example of using the Conv2DTranspose layer in TensorFlow:
+
+```python
+import tensorflow as tf
+from tensorflow.keras import layers
+
+# Create a transposed convolution layer
+transposed_conv = layers.Conv2DTranspose(filters=64, kernel_size=3, strides=(2, 2), padding='same')
+
+# Example usage
+input_tensor = tf.random.normal([32, 28, 28, 3])  # Example input tensor
+output = transposed_conv(input_tensor)  # Apply transposed convolution
+
+print(output.shape)  # Output shape: (32, 56, 56, 64)
+```
+
+In the example above, we created a Conv2DTranspose layer with 64 filters, a kernel size of 3x3, and a stride of (2, 2). We then applied the transposed convolution to an example input tensor of shape (32, 28, 28, 3), which resulted in an output tensor of shape (32, 56, 56, 64).
+
+Note that the strides argument determines the stride of the transposed convolution operation, which controls the upsampling factor. By increasing the stride, you can increase the size of the output feature maps.
+
+Transposed convolution can be a powerful tool for upsampling and generating high-resolution images in deep learning models. It allows the model to learn and generate detailed structures by expanding the feature maps.
+
+[for detailed explanation of Transposed convolution, click here..](https://towardsdatascience.com/understand-transposed-convolutions-and-build-your-own-transposed-convolution-layer-from-scratch-4f5d97b2967)
+
+
 
 ### Vannila GAN
 #

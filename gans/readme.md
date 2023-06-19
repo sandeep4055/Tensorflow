@@ -20,7 +20,7 @@
 - [Generative Adversarial Networks (GANs)](#generative-adversarial-networks-gans)
     - [Architecture and components of GANs](#architecture-and-components-of-gans)
     - [Training process and loss functions in GANs](#training-process-and-loss-functions-in-gans)
-    - [Transposed Convolution](#)
+    - [Transposed Convolution](#transposed-convolutions)
     - [Vannila GAN](#vannila-gan)
         - [Improving Vannila GAN stability](#improving-vannila-gan-stability)
     - [Improving GAN stability: DCGAN, WGAN, etc.](#improving-gan-stability-dcgan-wgan-etc)

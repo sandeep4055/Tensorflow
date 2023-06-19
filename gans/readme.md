@@ -430,14 +430,17 @@ It's important to note that various GAN variants may employ different loss funct
 
 #### Transposed Convolutions
 #
+![1_faRskFzI7GtvNCLNeCN8cg](https://github.com/sandeep4055/Tensorflow/assets/70133134/3445749b-52a4-4c52-9ad0-bba24d89f7fe)
+
 Transposed convolution, also known as fractionally-strided convolution or deconvolution, is a type of convolutional operation used in deep learning models. It is commonly used in tasks such as image upsampling, image generation, and semantic segmentation.
 
 In transposed convolution, the input and output dimensions are reversed compared to regular convolution. While regular convolution reduces the spatial dimensions of the input, transposed convolution increases the spatial dimensions of the input.
 
 Transposed convolution can be thought of as the inverse operation of regular convolution. Instead of applying filters to the input and computing the dot product, transposed convolution applies filters to the output and computes the dot product, which leads to the expansion of the feature maps.
 
-**For a given size of the input (i), kernel (k), padding (p), and stride (s), the size of the output feature map (o) generated is given by
-`o = (i-1)*s+k-2p`**
+**For a given size of the input (i), kernel (k), padding (p), and stride (s), the size of the output feature map (o) generated is given by**
+
+                                                           `o = (i-1)*s+k-2p`
 
 
 In TensorFlow, you can use the Conv2DTranspose layer to perform transposed convolution. Here's an example of using the Conv2DTranspose layer in TensorFlow:

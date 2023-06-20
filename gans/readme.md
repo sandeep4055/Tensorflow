@@ -540,7 +540,7 @@ DCGANs have been applied to various practical use cases, such as generating anim
 
 In summary, DCGANs are a powerful and popular type of GAN that use deep convolutional neural networks for both the generator and discriminator components. They have been applied to various practical use cases and have been shown to provide more stable training and better results compared to basic GANs. To implement a DCGAN, you can use popular deep learning frameworks such as TensorFlow or PyTorch.
 
-[Click here for DCGAN jupyter notebook]()
+[Click here for DCGAN jupyter notebook](https://github.com/sandeep4055/Tensorflow/blob/main/gans/dcgan.ipynb)
 
 
 
